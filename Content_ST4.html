@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Content Page</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+        body{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: "heading heading" "navbar navbar" "sidebar main" "sidebar footer" "sidebar copyright";
+            min-height: 100vh;
+            grid-template-rows: auto auto 1fr auto auto;
+        }
+
+        header{
+            grid-area: heading;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+
+        aside{
+            grid-area: sidebar;
+        }
+
+        main{
+            grid-area: main;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+        .copyright{
+            grid-area: copyright;
+        }
+
+
+        /*SIDEBAR*/
+        *{
+                list-style: none;
+                text-decoration: none;
+            }
+
+          
+            .wrapper{               
+                top: 0;
+                width: 170px;
+                min-height: 100vh;
+                background: rgb(185, 255, 165);
+                padding: 13px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: sticky;
+            }
+
+
+            .wrapper .sidebar ul li{
+                padding: 12px;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                border-top: 1px solid rgba(225,225,225,0.05);
+            }
+
+            .wrapper .sidebar ul li a{
+                color: black;
+                display: block;
+            }
+
+            .wrapper .sidebar ul li:hover{
+                background-color: #83f860;
+                transform: translateY(5px);
+                transition: all 0.5s;
+            }
+
+            .wrapper .sidebar .gotoTop:hover{
+                transform: translateY(5px);
+                transition: all 0.5s ease-in-out;
+                background-color: #c8fdb8;
+                cursor: pointer;
+            }
+
+            .wrapper .sidebar .gotoTop{
+                position: absolute;
+                left: 50px;
+                padding: 15px;
+                background: #83f860;
+                border: 2px solid green;
+                font-size: 15px;
+                border-radius: 20px;
+                margin-top: 50px;
+                left: 25%;
+                color: black;
+            }
+
+            .content h1 {
+                font-size: 40px;
+            }
+
+            .content h2 {
+                font-size: 30px;
+            }
+
+            .content p {
+                font-size: 19px;
+                text-align: justify;
+            }
+
+            .content img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+    </style>
+    </head>
+	<body>
+        <header id="top">
+            <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile/menue.png" alt="Menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+        <aside>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#section1">What is Zero Hunger??</a></li>
+                        <li><a href="#section2">The Global Hunger Crisis: Facts and Figures</a></li>
+                        <li><a href="#section3">The United Nations' Sustainable Development Goal #2: Zero Hunger</a></li>
+                        <li><a href="#section4">The Link Between Hunger and Poverty</a></li>
+                    </ul>
+                    <a href="#top" class="gotoTop">Go to Top</a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="content">
+                <h1>Understanding Zero Hunger</h1>
+                <h2 id="section1">
+                    <i>What is Zero Hunger??</i>
+                </h2>
+                <img src="imageFile/bakery.jpg" alt="food">
+                <p>All people deserve yearly access to enough safe and nutritious sufficient food under the global 
+                    initiative Zero Hunger. The elimination of hunger and all forms of malnutrition along with 
+                    sustainable food production sets as the United Nations' Sustainable Development Goals (SDG #2) 
+                    with 2030 as its deadline. Hunger continues to be a widespread worldwide issue which confronts 
+                    millions of people especially in countries that are developing along with zones experiencing conflict. 
+                    Through its Zero Hunger project the initiative concentrates on developing food systems while enhancing 
+                    agricultural outcomes and minimizing food waste and guaranteeing food availability to low-income 
+                    populations alike. This goal remains fundamental to enhance health while stimulating development and 
+                    building a more balanced and lasting society.
+                </p>
+    
+                <h2 id="section2">
+                    <i>The Global Hunger Crisis: Facts and Figures</i>
+                </h2>
+                <img src="imageFile/girl.jpg" alt="hungry child">
+                <p>
+                    The world faces hunger as its most critical humanitarian problem because millions of people lack sufficient food 
+                    during this era because of poverty alongside conflict and environmental changes and financial uncertainty. 
+                    The Food and Agriculture Organization (FAO) in 2023 reports that hunger affecting over 735 million people exists across 
+                    the world. Under five youth numbering 45 million experience severe malnutrition leading to growth stunting and reduced 
+                    immunity together with increased mortality rates.
+                </p>
+                <p>
+                    Rural regions experience the worst consequences because 70% of hunger-stricken people in the world rely on agriculture 
+                    for their survival although they cannot obtain modern farming methods or access land or financial backing. Hunger in 
+                    vulnerable regions becomes worse when both wars and natural disasters disrupt food production as well as distribution 
+                    networks. The global food supply is sufficient to feed every person but difficulties in distributing food equally and 
+                    poor distribution along with waste cause hunger. The global food systems demonstrate extensive inefficiencies because 
+                    1.3 billion tons of food escape waste annually. Global authorities along with organizations and communities need to implement 
+                    immediate solutions to tackle these problems.
+                </p>
+    
+                <h2 id="section3">
+                    <i>The United Nations' Sustainable Development Goal #2: Zero Hunger</i>
+                </h2>
+                <img src="imageFile/foods.jpg" alt="food equality">
+                <p>
+                    SDGs emerged at the United Nations in 2015 and SDG #2 represents their commitment to reach Zero Hunger by 2030. SDG #2 targets 
+                    the elimination of hunger while it works to enhance nutrition and develop environmentally sustainable farming techniques 
+                    for upcoming generations. The four fundamental objectives of SDG #2 are providing everyone with nutritious food and eliminating 
+                    all nutritional deficiencies as well as boosting agricultural production and strengthening food system sustainability.
+                </p>
+                <p>
+                    According to the UN various agricultural investments must be focused on small-scale farmers as they cultivate substantial 
+                    parts of worldwide food production. The sustainable food production practices must encompass environmentally respectful 
+                    farming techniques alongside comprehensive soil protection and decreased food waste measures. Governments should create 
+                    social protection systems which include food aid programs together with school meal initiatives to help needy communities. 
+                    The achievement of some regional milestones remains positive but ongoing conflicts and economic imbalances and 
+                    environmental changes maintain a significant pace of slow-down. The elimination of hunger needs every country to work 
+                    alongside corporations and citizens to provide everyone access to sufficient nourishment.
+                </p>
+    
+                <h2 id="section4">
+                    <i>The Link Between Hunger and Poverty</i>
+                </h2>
+                <img src="imageFile/bread.jpg" alt="food equality">
+                <p>
+                    Hunger exists closely with poverty as they create an ongoing cycle that drives millions into persistent desperate living 
+                    conditions. Persons whose income falls below poverty level lack money to purchase nourishing food and make farming investments 
+                    and obtain medical care which creates conditions for starvation and lowers their workforce ability. The lack of needed nutrition 
+                    causes individuals to face work inefficiencies along with difficulties maintaining financial stability and developing living 
+                    conditions which perpetuates their destitution.
+                </p>
+                <p>
+                    Developing countries experience sustained practical challenges that prevent farmers from getting to food markets or obtaining 
+                    agricultural equipment. Displacement of vulnerable populations as well as conflicts force individuals to endure extreme hunger along 
+                    with poverty because they lose access to their homes, their employment and sustainable means of sustaining life. Gender inequality 
+                    in various regions restricts women along with children from property ownership which prevents their total workforce participation.
+                </p>
+                <p>
+                    A transformation of this pattern demands powerful economic frameworks united with educational investments alongside job establishment 
+                    programs which support small-scale agriculturists. Better wages coupled with social protection programs and sustainable agricultural 
+                    strategies together create food security and successfully raise millions from poverty while providing proper nutrition to everyone. 
+                    Public bodies need to unite with organizations to create equal opportunities for development of farming and decrease inequality in order 
+                    to fight global hunger and poverty successfully.
+                </p>
+    
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+	</body>
+</html>

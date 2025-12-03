@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Feedback form</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background-color: white;
+                color: #006400;
+                    
+            }
+            .form-container{
+                background-color: #E8F5E9;
+                padding: 20px;
+                border-radius: 10px;
+                max-width: 600px;
+                margin: 20px auto;
+                text-align: center;
+            }
+            h1{
+                text-align: center;
+                color:#2E7D32;
+                font-size:24px;
+                margin-bottom: 20px;
+                margin-top: 0;
+            }
+            h2{
+                color:#4CAF50;
+                font-size:18px;
+                margin-bottom: 15px;
+            }
+            fieldset {
+                border: 2px solid #004d00;
+                border-radius: 5px;
+                padding: 30px;
+                margin-bottom: 20px;
+                text-align:left;
+            }  
+            legend{
+                color: #004d00;
+                font-weight: bold;
+            }   
+            label{
+                display: inline-block; /* To make the labels stay in line */
+                vertical-align: middle;
+                margin-bottom: 3px;
+            }  
+            input,textarea,select{
+                width: 100%;
+                padding:8px;
+                margin-bottom: 10px;
+                border: 1px solid #004d00;
+                border-radius: 5px;
+                
+            }
+            input[type="checkbox"], input[type="radio"] {
+                width: auto;
+                margin-right: 5px;
+                vertical-align: middle;
+            } 
+            .checkbox-group,.radio-group{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }         
+            .rating{
+                display: flex;
+                justify-content:space-evenly ;
+                margin-bottom: 10px;
+
+            }
+            .rating button{
+                background: none;
+                border: none;
+                font-size: 24px;
+                cursor:pointer;
+                color:#004d00;
+            }
+            .rating button:hover{
+                color:#00cc00;
+
+            }
+            .error{
+                color:red;
+                font-size: 12px;
+            }
+            .submit-btn{
+                background-color: #0e4e10;
+                color:white;
+                padding: 10px 20px;
+                border:none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .submit-btn:hover{
+                background-color: #00cc00;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>Together, We can ensure no plate is ever empty</h3>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile-20250302T061744Z-001/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile-20250302T061744Z-001/menue.png" alt="menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <div class="form-container">
+            <h1><b>Your Feedback Feeds Change!</b></h1>       
+            <h2>Feedback form</h2>
+            <form action="mailto:foodforhope004@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend id="personaldetails">Personal Details</legend>
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name." required>  <br><br>
+                    <label for="email">Email:</label> 
+                    <input type="email" id="email" name="email" placeholder="Enter your email." required><br><br>  
+                    <label for="phone">Phone number:</label> 
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number." required><br><br> 
+                    <label for="address">Address:</label> 
+                    <textarea id="address" name="address" rows="3" maxlength="500" placeholder="Write your address here." required></textarea><br><br> 
+                    
+                </fieldset>
+
+                <fieldset>
+                    
+                    <legend id="feedbackdetails">Feedback Details</legend>
+                    <label for="options">1. Which of the following actions do you believe is most important to achieve Zero Hunger? Please select one option.</label>
+                    <select id="options" name="options">
+                        <option value="Reduce food waste">Reduce food waste</option>
+                        <option value="Support small scale farmers">Support small scale farmers</option>
+                        <option value="Support local food banks">Support local food banks</option>
+                    </select>
+
+
+                    <label>2. Which of the following actions are you willing to take to contribute to Zero Hunger?Select multiple options by holding ctrl and clicking on options.</label>
+                    <select multiple>
+                        <option value ="Donate to food banks or charity">1.Donate to food banks or charity.</option>
+                        <option value ="Volunteer at local food distribution centers">2.Volunteer at local food distribution centers.</option>
+                        <option value ="Promote sustainable farming practices">3.Promote sustainable farming practices.</option>
+                        <option value ="Raise awareness about hunger issues">4.Raise awareness about hunger issues.</option>
+                        <option value ="Participate in food drives for fundraises">5.Participate in food drives for fundraises.</option>
+                    </select>
+
+
+                    <label>3. How likely are you to recommend volunteering for this cause to others?</label>
+                    
+                    <div class="radio-group">
+                        <label><input type="radio" name="recommend" value="very-likely"> Very likely</label>
+                        <label><input type="radio" name="recommend" value="somewhat-likely"> Somewhat likely</label>
+                        <label><input type="radio" name="recommend" value="neutral"> Neutral</label>
+                        <label><input type="radio" name="recommend" value="unlikely"> Unlikely</label>
+                        <label><input type="radio" name="recommend" value="very-unlikely"> Very unlikely</label>
+                    </div>
+
+                    
+                    <label>4. What motivated you to volunteer for the Zero Hunger initiative?(Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="motivation" value="passion"> Passion for ending hunger.</label>
+                        <label><input type="checkbox" name="motivation" value="community"> Interest in community service.</label>
+                        <label><input type="checkbox" name="motivation" value="food-security"> Wanting to learn about food security.</label>
+                        <label><input type="checkbox" name="motivation" value="school"> School/University requirements.</label>
+                        <label><input type="checkbox" name="motivation" value="friends"> Encouragement from friends.</label>
+                    </div>
+                    
+
+                    <label for="comment">Do you have additional feedback? Comment or Message:</label>
+                    <textarea id="comment" name="comment" rows="5" maxlength="500" placeholder="Write your feedback here."></textarea><br><br>
+
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required> 
+
+
+                    <label for="file">Upload a file:</label>
+                    <input type="file" id="file" name="file"> 
+
+
+                    <label>How would you rate your experience?</label>
+                    <div class="rating">
+                        <button type="button">&#9733;</button>
+                        <button type="button">&#9733;</button>
+                        <button type="button">&#9733;</button>
+                        <button type="button">&#9733;</button>
+                        <button type="button">&#9733;</button>
+                    </div>
+                    
+                    
+                </fieldset>
+                <button type="submit" class="submit-btn">Submit</button>
+
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+        <script>
+            window.onload=function(){
+                document.getElementById('feedbackForm').addEventListener('submit',function(event){
+                    let valid=true;
+                    const inputs=document.querySelectorAll('input,textarea,select');
+                    inputs.forEach(input =>{
+                        if(!input.checkValidity()){
+                            valid=false;
+                            input.style.border="2px solid red";
+                        }else{
+                            input.style.border="1px solid #004d00";
+                        }
+
+                        
+                    
+                    });
+                    if (!valid){
+                        event.preventDefault();
+                        alert('Please fill out all required fields correctly.');
+                    }
+                });
+            }
+
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>

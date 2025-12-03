@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page Student 01 - Vinuji Balasooriya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        main {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+        header{
+            text-align: center;
+            background-color: rgb(185, 255, 165);
+            color: black;
+            padding: 10px 0;
+        }
+        .ref li{
+            list-style: none;
+            padding-bottom: 9px;
+        }
+
+        aside a{
+            text-decoration : none;
+        }
+
+        aside li{
+            padding-bottom: 4px;
+        }
+
+        .stud {
+            text-align: center;
+            line-height: 0;
+            background-color: #6f6f6de6;
+            color: white;
+            margin-top: 8px;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+        }
+                
+        .top a {
+            padding: 10px 20px; /* Adds padding for button-like feel */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            text-decoration: none; /* Removes underline */
+            border-radius: 20px; /* Rounds the corners */
+            font-size: 12px; /* Adjust font size */
+            font-weight: bold; /* Make the text stand out */
+        }
+
+        .top a:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+        }
+
+        .imglogo{
+            width: 35%;
+            box-shadow: none;
+        }
+        img{
+            width: 90%;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h3>Together, we can ensure no plate is ever empty</h3>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img class="imglogo" src="images/siteLogo.png" alt="Website Logo" width="250"></a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <a href="#"><img src="images/menue.png" alt="Menue"  width="40"></a>
+        </div>
+        <ul class="menue">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="userProfile_ST4.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu(){
+            const menu=document.querySelector('.menue');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <main>
+        <section class="stud">
+            <h2>Vinuji Balasooriya, Student 01</h2>
+        </section>
+
+        <div class="container">
+            <!-- Main content area -->
+            <main>
+
+                <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
+
+                <section>
+                    <h2 id="splashVal">Splash Page validation report</h2>
+                        <p>The loading screen ensures complete resource availability of background images and member information prior to presentation. A rounded-corner semi-transparent block shows names in a straightforward manner. When all validations succeed you can use the available button to access the page editor.</p> 
+                        <img src="images/SplashscreenVal01.jpg">
+                        <img src="images/SplashscreenVal02.jpg">
+                        <img src="images/SplashscreenVal03.jpg">
+                        <img src="images/SplashscreenVal04.jpg">
+                                        
+                    <h3>Back to Page Editor page</h3>
+                        <p><a href="pageEditorST01.html#Splash">Splash screen</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                </section>
+
+                <section>
+                    <h2 id="volunteerVal">Volunteer Page validation report</h2>
+                    <p>The web page displays all vital information regarding our volunteer programs such as current available roles together with description of roles and requirements to participate. Complete the data entry correctly before finishing the submission process. The system validates program information to show complete proper details which attract interested volunteers.</p>
+                    <h3>Volunteer Page 01</h3>
+                        <img src="images/Volunteer01_page-0001.jpg">
+                        <img src="images/Volunteer01_page-0002.jpg">
+                        <img src="images/Volunteer01_page-0003.jpg">
+                        <img src="images/Volunteer01_page-0004.jpg">
+                    <h3>Volunteer Page 02</h3>
+                        <img src="images/Volunteer02_page-0001.jpg">
+                        <img src="images/Volunteer02_page-0002.jpg">
+                        <img src="images/Volunteer02_page-0003.jpg">
+                        <img src="images/Volunteer02_page-0004.jpg">
+                        <img src="images/Volunteer02_page-0005.jpg">
+                        <img src="images/Volunteer02_page-0006.jpg">
+                        <img src="images/Volunteer02_page-0007.jpg">
+                        <img src="images/Volunteer02_page-0008.jpg">
+                        <img src="images/Volunteer02_page-0009.jpg">
+                        <img src="images/Volunteer02_page-0010.jpg">
+                        <img src="images/Volunteer02_page-0011.jpg">
+                        <img src="images/Volunteer02_page-0012.jpg">
+                        <img src="images/Volunteer02_page-0013.jpg">
+                        <img src="images/Volunteer02_page-0014.jpg">
+                        <img src="images/Volunteer02_page-0015.jpg">
+                                        
+                    <h3>Back to Page Editor page</h3>
+                        <p><a href="pageEditorST01.html#volunteer">Volunteer Page</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                </section></a></p>
+
+                <section>
+                    <h2 id="contentVal">Content Page validation report</h2>
+                    <p>The page checks that displayed content maintains proper quality standards as well as factual accuracy. This page ensures the information is complete along with well-structured formats and accurate formatting before content goes public. Review the content with great detail to verify both clarity and compliance with guidelines together with content consistency.</p>
+                    <img src="images/ContentST01_page-0001.jpg">
+                    <img src="images/ContentST01_page-0002.jpg">
+                    <img src="images/ContentST01_page-0003.jpg">
+                    <img src="images/ContentST01_page-0004.jpg">
+                    <img src="images/ContentST01_page-0005.jpg">
+                    <img src="images/ContentST01_page-0006.jpg">
+                    <img src="images/ContentST01_page-0007.jpg">
+                    <h3>Back to Page Editor page</h3>
+                        <p><a href="pageEditorST01.html#content">Content Page</a></p>
+                    <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                </section></a></p>
+
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                <ul class="top-level-ul">
+                    <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                    <li>Student 1</li>
+                        <ul> 
+                            <li><a href="splashST01.html">Splash page </a></li>
+                            <li><a href="Volunteerpage01ST01.html">Volunteer page 01</a></li>
+                            <li><a href="Volunteerpage02ST01.html">Volunteer page 02</a></li>
+                            <li><a href="contentST01.html">Content page </a></li>
+                        </ul>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+</body>
+</html>

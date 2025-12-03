@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Team Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                background-color:white;
+                color:#2c5f2d;
+                text-align:center;
+            }
+            
+            
+            .team-container{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap:20px;
+                margin-top: 20px;
+            }
+            .team-member{
+                text-align: center;
+                width:250px;
+                height: auto;
+                cursor: pointer;
+                padding: 15px;
+                background-color: #a3d9a5;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                transition:transform 0.3s ease-in-out,background-color 0.3s;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .team-member:hover{
+                transform:scale(1.05);
+                background-color: #76c893;
+            }
+            
+            .thumbnail {
+                width: 100%; 
+                height: 200px; 
+                object-fit: contain; /* image fills the space properly */
+                margin-bottom: 10px; 
+            }
+            .team-member:hover .thumbnail,.team-member:focus .thumbnail{
+                opacity: 0.7;
+            }
+            .details{
+                max-height: 0;
+                overflow: hidden;
+                background-color: #f0fff4;
+                padding: 0 10px;
+                border-radius: 8px;
+                margin-top: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: max-height 0.4s ease-in-out,padding 0.4s ease-in-out;
+                text-align: left;
+            }
+            .details.active{
+                max-height:300px;
+                padding: 10px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>Together, We can ensure no plate is ever empty</h3>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile-20250302T061744Z-001/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile-20250302T061744Z-001/menue.png" alt="menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="team">
+                <h1>Our Team</h1>
+            </div>
+            
+            <div class="team-container">
+                <div class="team-member" tabindex="0" onclick="toggleDetails(this)">
+                    <img src="imageFile-20250302T061744Z-001/member1.jpg" alt=" Member 1" class="thumbnail">
+                    
+                        <h2>B.M.Vinuji Jayandee Balasooriya</h2>
+                        <div class="details">
+                            <h3>Balasooriya Mudiyanselage Vinuji Jayandee Balasooriya</h3>
+                            <p class="role">Student 1</p>
+                            
+                                <ol>
+                                    <li>Splash screen</li>
+                                    <li>Volunteer page</li>
+                                    <li>Content page </li>
+                                    <li> Page editor </li>
+                                    <li>Validation page</li>
+                                </ol> 
+                            
+                        </div>
+                </div>
+                <div class="team-member" tabindex="0" onclick="toggleDetails(this)">
+                    <img src="imageFile-20250302T061744Z-001/member2.jpg" alt=" Member 2" class="thumbnail">
+                    
+                        <h2>Supuni Tharindi Wijesinghe</h2>
+                        <div class="details">
+                            <h3>Supuni Tharindi Wijesinghe</h3>
+                            <p class="role">Student 2</p>
+                            
+                                <ol>
+                                    <li>Website style and navigation</li>
+                                    <li>Home screen</li>
+                                    <li>Table</li>
+                                    <li>Content page</li>
+                                    <li> Page editor</li>
+                                    <li>Validation page</li>
+                                </ol> 
+                            
+                        </div>
+                </div>
+                <div class="team-member" tabindex="0" onclick="toggleDetails(this)">
+                    <img src="imageFile-20250302T061744Z-001/member3.jpg" alt=" Member 3" class="thumbnail">
+                    
+                        <h2>W.A.Methmi Sandamini</h2>
+                        <div class="details">
+                            <h3>Wedippuli Arachchige Methmi Sandamini</h3>
+                            <p class="role"> Student 3</p>
+                            
+                                <ol>
+                                    <li>Feedback form</li>
+                                    <li>Team page</li>
+                                    <li>Content page</li>
+                                    <li> Page editor</li>
+                                    <li>Validation page</li>
+                                </ol> 
+                        </div>    
+                    
+                </div>
+                <div class="team-member" tabindex="0" onclick="toggleDetails(this)">
+                    <img src="imageFile-20250302T061744Z-001/member4.jpg" alt=" Member 4" class="thumbnail">
+                    
+                        <h2>W.H.Sasni Lasadi</h2>
+                        <div class="details">
+                            <h3>Welihena Hewage Sasni Lasadi</h3>
+                            <p class="role"> Student 4</p>
+                            
+                                <ol>
+                                    <li>User profile</li>
+                                    <li>Site map</li>
+                                    <li>Content page</li>
+                                    <li> Page editor</li>
+                                    <li>Validation page</li>
+                                </ol> 
+                                
+                        </div>
+                </div>
+            </div>    
+                
+        </main>
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+           
+        <script>
+        function toggleDetails(element){
+            let details=element.querySelector (".details");
+            details.classList.toggle("active");
+        }
+
+        function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>

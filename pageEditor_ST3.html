@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - W.A.M.Sandamini</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- External CSS link -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        main {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-right: 10px;
+            margin-top: 61px;
+            position: relative;
+            left: 40px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+            position: relative;
+            left:50px;
+            
+        }
+        section ol{
+            padding-left: 20px;
+        }
+        section ul{
+            padding-left: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .ref li{
+            list-style: none;
+            padding-bottom: 9px;
+        }
+
+        aside a{
+            text-decoration : none;
+        }
+
+        aside li{
+            padding-bottom: 4px;
+        }
+        aside ul{
+            padding-left: 20px;
+            padding-bottom: 4px;
+        }
+
+        #stud {
+            text-align: center;
+            line-height: 0;
+            background-color: #6f6f6de6;
+            color: white;
+            margin-top: 8px;
+            position: relative;
+            left: -1px;
+        }
+        #role{
+            text-align: center;
+            line-height: 0;
+            background-color: #6f6f6de6;
+            color: white;
+            margin-top: 8px;
+            position: relative;
+            left: 1px;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+        }
+                
+        .top a {
+            padding: 10px 20px; /* Adds padding for button-like feel */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            text-decoration: none; /* Removes underline */
+            border-radius: 20px; /* Rounds the corners */
+            font-size: 12px; /* Adjust font size */
+            font-weight: bold; /* Make the text stand out */
+        }
+
+        .top a:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+        }
+
+        img{
+            width: 35%;
+        }
+        main{
+            margin-left: 1px;
+        }
+        
+        
+
+        
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header>
+        <h3>Together, We can ensure no plate is ever empty</h3>
+    </header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile-20250302T061744Z-001/siteLogo.png" alt="Website Logo" width="250px"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile-20250302T061744Z-001/menue.png" alt="menue"  width="40px"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+    <section id="role">
+        <h2>W.A.Methmi Sandamini, student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="feedbackForm">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The page presents an accessible feedback form so users can post their comments along with their suggestions or opinions about any issues they want to convey. Users can access the form through which they must enter their name, email address and provide a message while choosing feedback ratings. Users benefit from a seamless interaction with this form because it was created to work seamlessly across various devices and accessible formats. Received user feedback becomes an essential tool to enhance service quality and website performance and user interface quality.</p> 
+                    
+                    <h3>Accessibility</h3>
+                        <p>A proper color design ensures text readability throughout the interface.
+                           Ensured proper contrast between text and background for readability.
+                           Users can benefit from label tags located with all text box elements which enable accessibility with screen readers.
+                           Text placeholders for users to understand expected input data in text boxes.</p>
+                    
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#feedbackVal"> link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="feedback.html">link to the Feedback page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Under the Team Page we present the members of our project through profiles that detail their roles together with their project involvement. Each team member profile becomes interactive through this layout which allows users to access their responsibilities by clicking the profiles. The modern structure of the page combines HTML and CSS and JavaScript elements to boost user experience.
+
+                            The platform displays each member with their image and name together with their assigned role and recorded project work. The interactive page features both hover effects when using a mouse cursor and clickable options which add visual appeal. Keyboard navigation and alt text for images determine two of several accessible elements on the page which provides inclusivity to all users.
+                            
+                            The flexible grid arrangement of team members allows the page to establish a friendly interface that reacts to different display sizes. The page holds essential importance in the website since it displays the project teams and their specialist areas of knowledge.</p> 
+                            The key HTML tags used:
+                                <ul>
+                                    <li>div tag:To structure the team member cards.</li>
+                                    <li>img tag:Used to display the profile picture of the members.</li>  
+                                    <li>script tag: Adds interactivity for toggling team member details.</li> 
+                                </ul>
+                            The key CSS properties:
+                                <ul>
+                                        <li>User interface appearance is enhanced by background-color.</li>
+                                        <li>The profile picture receives its rounded circular shape from border-radius.</li>
+                                        <li>padding along with margin provides spacial separation between user interface components.</li> 
+                                        <li>The text automatically centers along the form heading and button using the center text alignment.</li> 
+                                        <li>The transition effect transforms the element smoothly during 0.3 seconds with an ease-in-out pace.</li> 
+                                        <li>box-shadow: 0 4px 8px rgba(0,0,0,0.2):Adds deapth for the team member cards.</li>  
+                                        <li>The max-height controls the details section to hide it until users click it while overflow keeps the content hidden.</li>  
+                                        <li>display:flex enables team container to display members within row organization.</li>
+                                </ul>
+
+                    <h3>Accessibility</h3>
+                        <p>Our users can access team members through tabindex="0".
+                           The color contrast settings maintain legibility for users who access the system.
+                           This feature maintains a neat interface design through better navigation.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#teamVal">link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="team.html"> Link to the Team page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The webpage builds its structured responsive interface and navigation with sidebar functionality using HTML and CSS. The webpage uses semantic HTML elements including header, nav,aside,main,footer alongside div to establish structure that gives better content understanding to users. The webpage uses the CSS grid layout through grid-template-areas to establish separate sections between the navigation bar and sidebar and main content areas. The aside element contains an interactive wrapper component made from flexbox and hover effect functionality for alignment purposes. The navigation menu activates the toggleMenu() JavaScript function to show and hide content elements when users need different screen sizes. The page design features Google Font typography called Quicksand alongside an import system to integrate additional typefaces successfully. The sidebar maintains its animation effects through background-color, border-radius and transform: translateY(5px) while also adding smooth transitions. The image responsiveness is achieved by applying .img-responsive { max-width: 100%; height: auto; } class to all images which provides compatibility across different devices. The page footer contains essential details and accessibility links which can be accessed through social media buttons designed to enhance visitor interaction. Structured HTML combined with well-organized CSS provides the page with usability and accessibility and readability functions that result in both visual appeal and operational functionality.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Different accessibility-friendly methods exist on the webpage since it utilizes semantic HTML elements including header, nav, main, and footer that enable better screen reader navigation. The webpage includes alt attributes for images thus enabling users with visual impairments to obtain useful descriptions. Screen readers and keyboard navigation can easily use the navigation menu because it uses lists through ul and li tags. Controlling access to the page with a "Go to Top" button gets better through the integration of `tabindex="0"` along with the usage of aria-label. The page relies on display: grid; for its responsive design however proper mobile compatibility needs further attention. The page contains appropriate color contrast but its readability needs testing.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html#contentVal">Link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST3.html">Link to the Content page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>Creating the Content Page presented difficulties related to visual layout design of text alongside images alongside preserving readable text at all screen resolutions and keeping font and spacing consistent. The development of the Feedback Form required me to solve three key problems: correct operation of dropdown menus and multiple-choice features and rating system setup along with responsive design optimization. Designing the Team Page required solving multiple issues involving team member card alignment through spacing and flex as well as creating fluid animations and designing styles that adapting to different screen sizes. Using fieldset tag form structures properly in the Feedback Form taught me about better readability and I learned to use label tag accessibility while also developing interactive elements like star ratings. The development of the Team Page required me to establish a clear structure before building it because I decided to use CSS transitions for smooth animations and I prioritized writing clean code for ease of future modifications. The gained lessons will improve both speed and quality of upcoming web development work.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p> The document assesses compliance for multiple web pages under Janet regulations by examining four key sections - accessibility, security, data protection along with user privacy. The web pages undergo evaluation based on Janet policies where administrators marked both strong aspects and weaker areas. Additional changes are identified through this review to fulfill guideline requirements thus improving web page security and adherence. The recommendations address weaknesses to maintain website compliance with necessary standards that promote optimal functionality and protect users.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style).<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed:9 March 2025).</li>
+                        <li>Pexels (2025) <i>Pexels.</i> Available at: <a href="https://www.pexels.com/">https://www.pexels.com/</a> (Last accessed: 9 March 2025).</li>
+
+                        <li>MDN Web Docs, 2025. <i>HTML Reference</i>, <i>Mozilla Developer Network</i>. [Online] Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a> [Accessed 1 March 2025].</li>
+
+                        <li>W3Schools, 2025. <i>HTML Reference</i>, <i>W3Schools.com</i>. [Online] Available at: <a href="https://www.w3schools.com/tags/default.asp">https://www.w3schools.com/tags/default.asp</a> [Accessed 23 February 2025].</li>
+
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="feedback.html">Feedback page</a> </li>
+                        <li><a href="team.html">Team page</a></li>
+                        <li><a href="content_ST3.html">Content page</a></li>
+                    </ul>
+                 
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+
+    
+        
+    
+</body>
+</html>

@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - 2</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header>
+        <h3>Together, we can ensure no plate is ever empty</h3>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img src="imageFile/siteLogo.png" alt="Website Logo" width="250px"></a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <a href="#"><img src="imageFile/menue.png" alt="Menue"  width="40px"></a>
+        </div>
+        <ul class="menue">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="userProfile_ST4.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu(){
+            const menu=document.querySelector('.menue');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <section class="stud">
+        <h2>Supuni Tharindi Wijesinghe, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="home">Home Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            In the following explanation, I will describe the purpose and logic behind the HTML tags and CSS properties used.<br><br>
+                            <b>Key HTML Tags</b><br>
+                            <ol>
+                                <li>&lt;!DOCTYPE html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                                <li>&lt;html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                                <li>&lt;head&gt; : contains metadata, title, external stylesheets and internal style tags</li>
+                                <li>&lt;title&gt; : sets the title of the web page as Home</li>
+                                <li>&lt;link&gt; : References an external stylesheet named "style.css"</li>
+                                <li>&lt;body&gt; : Contains the whole content of the web page</li>
+                                <li>&lt;header&gt; : Contains the main heading</li>
+                                <li>&lt;nav&gt; : Represents the navigation menu</li>
+                                <li>&lt;main&gt; : Represents the central content </li>
+                                <li>&lt;footer&gt; : Represents the footer </li>
+                                <li>&lt;div&gt; : Used to create classes for organizational purposes</li>
+                                <li>&lt;img&gt; : Represents the images.</li>
+                                <li>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; :  Represents Headings based on the priority:</li>
+                                <li>&lt;p&gt; : Represents paragraphs</li>
+                                <li>&lt;a&gt; : Provides hyperlinks</li>
+                                <li>&lt;script&gt; : Contains the JavaScript code for toggling. Once the menu icon is clicked, the navigation menu will be toggled</li>
+                            </ol>
+                        </p> 
+                        <p>
+                            <b>Key CSS Properties</b><br>
+                            <ol>
+                                <b><li>Layout</li></b>
+                                <p>display:flex; is used in sections like .container, .about and .purpose to create flexible layouts.</p>
+                                <p>flex-wrap; is used to make the layout responsive by wrapping the items onto multiple lines.</p>
+                                <p>justify-content: space-evenly; evenly spaces out items having equal spacing between the items in .about and .purpose sections.</p>
+
+                                <b> <li>Positioning and Layout Control</li></b>
+                                <p>position: absolute; is used in .text and .article to position them relative to their closest parent element.</p>
+                                <p>transform: translateY(); creates smooth transitions when .background and .card sections hover over.</p>
+                                <p>width: fit-content; is used in .text class to make the width ajust to content inside.</p>
+
+                                <b><li>Visual Appearance</li></b>
+                                <p>background: rgba(0, 0, 0, 0.5); adds a background with an opacity of 0.5 in .text and .article sections.</p>
+                                <p>color:white; applies for the texts white color.</p>
+                                
+                                <b><li>Transitions and Hover Effects</li></b>
+                                <p>transition: 0.5s ease-in-out; adds smooth transitions for transform and opacity properties.</p>
+                                <p>:hover is used in .backgroun:hover, etc to change the appearence when the user hovers on. </p>
+                                
+                                <b><li>Sizing and Spacing</li></b>
+                                <p>Width; and height; decides the width and height of .card, .task, etc.</p>
+                                <p>padding; adds internal spacing in .text section. </p>
+                                <p>margin; adds spacing between the cards in .card section.</p>
+
+                                <b><li>Button Styling</li></b>
+                                <p>background-color: rgb(131, 230, 18); indicates the background colour of buttons.</p>
+                                <p>cursor: pointer; Changes the cursor to a hand symbol when hovering over the buttons.</p>
+                                
+                            </ol>
+                        </p>
+                        
+                    <h3>Accessibility</h3>
+                        <p>To ensure the accessibility in the home page, I have used alternative texts for images (eg:alt="Website Logo") to diplay when the image is not loading. 
+                            And also, there are clear and descriptive links to access web pages using buttons with interactive actions(eg: :hover). As well as I have used proper font sizes and font family 
+                            to keep the text readability of the page. 
+                        </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#homehVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="home.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="table">Table Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        In the following explanation, I will describe the purpose and logic behind the HTML tags and CSS properties used.<br><br>
+                        <b>Key HTML Tags</b><br>
+                        <ol>
+                            <li>&lt;!DOCTYPE html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                            <li>&lt;html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                            <li>&lt;head&gt; : contains metadata, title, external stylesheets and internal style tags</li>
+                            <li>&lt;title&gt; : sets the title of the web page as Home</li>
+                            <li>&lt;link&gt; : References an external stylesheet named "style.css"</li>
+                            <li>&lt;body&gt; : Contains the whole content of the web page</li>
+                            <li>&lt;header&gt; : Contains the main heading</li>
+                            <li>&lt;nav&gt; : Represents the navigation menu</li>
+                            <li>&lt;main&gt; : Represents the central content </li>
+                            <li>&lt;footer&gt; : Represents the footer </li>
+                            <li>&lt;div&gt; : Used to create classes for organizational purposes</li>
+                            <li>&lt;img&gt; : Represents the images.</li>
+                            <li>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; :  Represents Headings based on the priority:</li>
+                            <li>&lt;p&gt; : Represents paragraphs</li>
+                            <li>&lt;a&gt; : Provides hyperlinks</li>
+                            <li>&lt;table&gt; : Represents a table</li>
+                            <li>&lt;tr&gt; : Represents a table row</li>
+                            <li>&lt;th&gt; : Represents a table heading</li>
+                            <li>&lt;td&gt; : Represents a table data cell</li>
+                            <li>&lt;caption&gt; : Provides the title of the table</li>
+                            <li>&lt;span&gt; : Acts as a container for tooltip</li>
+                            <li>aria-label : Adds descriptive labels to links to the GHI index for each country</li>
+                        </ol>
+                    </p> 
+
+                    <p>
+                        <b>Key CSS Properties</b><br>
+                        <ol>
+                            <b><li>Layout</li></b>
+                            <p>display:flex; is used in sections like .container, .about and .purpose to create flexible layouts.</p>
+                            <p>flex-wrap; is used to make the layout responsive by wrapping the items onto multiple lines.</p>
+                            <p>justify-content: space-evenly; evenly spaces out items having equal spacing between the items in .about and .purpose sections.</p>
+
+                            <b> <li>Table Style</li></b>
+                            <p>border-collapse: collapse is used to remove the space between table cells.</p>
+                            <p>margin-left: auto; margin-right: auto; centers the table horizontally.</p>
+                            <p>border: 1px solid black; creates a border aruond the table. </p>
+
+                            <b><li>Table Row Style</li></b>
+                            <p>.row td; ensures that the table data are center aligned and height of a cell is 90px uing this section. </p>
+                            <p>.row:nth-child(even); applies background colour for even rows.</p>
+                            
+                            <b><li>Tooltips</li></b>
+                            <p>.tooltip is used to provide the country name when hovered over which is invisible initially (opacity:0;).</p>
+                            <p>.tooltip:before; adds a small triangle below the tooltip</p>
+                            
+                            <b><li>Image Style</li></b>
+                            <p>.icon img is used to apply a border with rounded edges and set the width to 60px.</p>
+                            
+                        </ol>
+                    </p>
+                    <h3>Accessibility</h3>
+                        <p>
+                            To improve the accessibility of the table page, I have used zebra strip colour pattern to the table. By hovering over the country flag
+                            image a tooltip will be popped up by mentioning the name of the country. By clicking on the country flag, user will be directed to the relevant GHI 
+                            web page of the country in www.globalhungerindex.org. area-label attribute clarifies the purpose of the relevant link to ensure the accessibility.
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#tableVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="table.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>
+                        In the following explanation, I will describe the purpose and logic behind the HTML tags and CSS properties used.<br><br>
+                        <b>Key HTML Tags</b><br>
+                        <ol>
+                            <li>&lt;!DOCTYPE html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                            <li>&lt;html&gt; : defines this is a HTML document and it belongs to HTML5</li>
+                            <li>&lt;head&gt; : contains metadata, title, external stylesheets and internal style tags</li>
+                            <li>&lt;title&gt; : sets the title of the web page as Home</li>
+                            <li>&lt;link&gt; : References an external stylesheet named "style.css"</li>
+                            <li>&lt;body&gt; : Contains the whole content of the web page</li>
+                            <li>&lt;header&gt; : Contains the main heading</li>
+                            <li>&lt;nav&gt; : Represents the navigation menu</li>
+                            <li>&lt;main&gt; : Represents the central content </li>
+                            <li>&lt;footer&gt; : Represents the footer </li>
+                            <li>&lt;div&gt; : Used to create classes for organizational purposes</li>
+                            <li>&lt;img&gt; : Represents the images.</li>
+                            <li>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; :  Represents Headings based on the priority:</li>
+                            <li>&lt;p&gt; : Represents paragraphs</li>
+                            <li>&lt;a&gt; : Used to create internal links to different sections</li>
+                            <li>&lt;aside&gt; : Contains the sidebar and GO to Top button</li>
+                            <li>&lt;button&gt; : Used to create Go to Top button</li>
+                        </ol>
+                    </p>  
+
+                    <p>
+                        <b>Key CSS Properties</b><br>
+                        <ol>
+                            <b><li>Grid Layout</li></b>
+                            <p>display:grid;is used to create flexible layouts.</p>
+                            <p>grid-template-columns; and grid-template-areas; define how the content page is divided into several areas such as header, navbar, sidebar, main content, footer and copyright</p>
+                        
+
+                            <b> <li>Sticky Sidebar</li></b>
+                            <p>position: sticky; ensures that the sidebar is always appearing while the user scroll the page.</p>
+                            <p>flex-direction:column; displays the sidebr links in column layout.</p>
+                            <p>list-style:none; removes the default bullet points of sidebar links.</p>
+                
+
+                            <b><li>Interactivity</li></b>
+                            <p>scroll-behavior: smooth; keeps smooth scroll efect when moving to internal links</p>
+                            <p>transform: translateY(); smooothly moves down when hover on the sidebar navigation links</p>
+                            <p>cursor: pointer; Changes the cursor to a hand symbol when hovering over the buttons.</p>
+                            
+                            <b><li>Image Style</li></b>
+                            <p>margin-left: auto; margin-right: auto; centers the images horizontally.</p>
+                            
+                        </ol>
+                    </p>
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            To ensure the accessibility of the content page I have used a fixed sidebar which is always displayed even the user scroll the page. 
+                            This will help to easily navigate through the relevant sections easily. And with Go to Top button, the user will be able to easily move 
+                            to the top heading of the content page. With the alternative texts for images if the web browser unable to display the images, it will display an alternative text
+                            to user to get an idea about the image. The colours used in this page improves the readability of the page.
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST2.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST2.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <ol>
+                        <b><li>Home Page</li></b>
+                        <p>
+                            The site experienced loading delays because of the oversized images displayed on the main page.
+                            Optimization of images through the paint tool allowed me to lower their file size without compromising visual quality. 
+                            Merging max-width: 100% properties with the images allows them to scale automatically based on the current layout dimensions.
+                            I set image height at 400px using the property in order to create uniform image dimensions no matter the device screen size.
+                        </p>
+                        <b><li>Table Page</li></b>
+                        <p>
+                            The table page featured country flags together with other content while I encountered inconsistent flag display according to screen dimensions. 
+                            The country flags appeared either improperly aligned or cut off from their original dimensions.
+                            I confined every flag image through a restricted container with specific dimensions (height: 30px; width: 40px;). I implemented object-fit: contain; 
+                            while constraining each image container to handle proper resizing without any image distortion. I resolved issues with 
+                            mobile layouts using media queries that changed the table rows into vertical positions to improve flag image scaling.
+                        </p>
+                        <b><li>Content Page</li></b>
+                        <p>
+                            I struggled to make my content including the sidebar and main content effectively resize properly for smaller screens during the process of developing screen size layouts.
+                            The CSS Grid Layout together with Flexbox properties allowed me to handle responsive design needs. The combination of grid-template-columns: repeat(2, 1fr) and grid-template-areas allowed design 
+                            modifications across various screens to become simpler. Media query application allowed appropriate resizing of the layout which maintained proper stacking of sidebar content 
+                            and main content elements on mobile screens.
+                        </p>
+                        
+                    </ol> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>
+                        I have followed several key concepts which are compliant with Janet regulations
+                        as listed below.
+                    </p> 
+                    <ol>
+                        <b><li>Web Accessibility</li></b>
+                        <ol type="i">
+                            <li>Use of ARIA Labels</li>
+                                <p>In my web pages ARIA labels were used to help users to understand the purpose of relevent link. This will increase the 
+                                    accessibility of the web page.
+                                </p>
+                            <li>Semantic HTML Tags</li>
+                                <p>My web pages include sementic HTML tags such as &lt;header&gt;, &lt;nav&gt;, &lt;aside&gt;, 
+                                    &lt;main&gt; and &lt;footer&gt; to help both screen readers and search engines to understand the structure of the content.
+                                </p>
+                            <li>Responsive Design</li>
+                                <p>
+                                    I have used CSS grids and flexbox to make the page responsive.
+                                </p>
+                            
+                        </ol>
+                        <b><li>General Standards</li></b>
+                        <ol type="i">
+                            <li>HTML5 and CSS3 Standards</li>
+                                <p>The HTML tags and CSS properties which I used to create my web pages are compitable with
+                                    modern browsers.
+                                </p>
+                        </ol>
+                    </ol>
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Home Page:</p>
+                    <ul class="ref">
+                        <li><a href="https://www.pexels.com/photo/a-woman-sorting-donations-6995015/" target="_blank">https://www.pexels.com/photo/a-woman-sorting-donations-6995015/</a>Cameron, J. M. (2020). A woman sorting donations. Pexels. Accessed March 01, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/sri-lankan-national-flag-against-clear-blue-sky-30857976/" target="_blank">https://www.pexels.com/photo/sri-lankan-national-flag-against-clear-blue-sky-30857976/</a>Alagiyawanna, T. (2022). Sri Lankan national flag against clear blue sky. Pexels. Accessed March 01, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/selective-focus-photography-of-wheat-field-265216/" target="_blank">https://www.pexels.com/photo/selective-focus-photography-of-wheat-field-265216/</a>Shvets, A. (2021). Plants Pixabay. (n.d.). Selective focus photography of wheat field. Pexels. Accessed March 01, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/plants-under-a-light-5831004/" target="_blank">https://www.pexels.com/photo/plants-under-a-light-5831004/</a>under a light. Pexels. Accessed March 01, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/a-boy-holding-a-stainless-bowl-9583256/" target="_blank">https://www.pexels.com/photo/a-boy-holding-a-stainless-bowl-9583256/</a>Andrabi, S. Q. (2020). A boy holding a stainless bowl. Pexels. Accessed March 01, 2025.</li>
+                        <li><a href="https://www.flaticon.com/icons" target="_blank">https://www.flaticon.com/icons</a>Flaticon. (n.d.). Social media icons. Flaticon. Accessed March 03, 2025.</li>
+                        <li><a href="https://fonts.google.com/icons" target="_blank">https://fonts.google.com/icons</a>Google. (n.d.). Menu icon. Google Fonts. Accessed March 03, 2025.</li>
+                    </ul>
+
+                <p>Table Page:</p>
+                    <ul class="ref">
+                        <li><a href="https://www.flaticon.com/packs/countrys-flags" target="_blank">https://www.flaticon.com/packs/countrys-flags</a>Flaticon. (n.d.). Country flags. Flaticon. Accessed March 03, 2025.</li>
+                        <li><a href="https://www.globalhungerindex.org/methodology.html" target="_blank">https://www.globalhungerindex.org/methodology.html</a>Global Hunger Index. (n.d.). Methodology. Global Hunger Index. Accessed March 03, 2025.</li>
+                    </ul>
+                <p>Content Page:</p>
+                    <ul class="ref">
+                        <li><a href="https://www.pexels.com/photo/photo-of-rotten-vegetables-5479034/" target="_blank">https://www.pexels.com/photo/photo-of-rotten-vegetables-5479034/</a>Krukau, Y. (2021). Photo of rotten vegetables. Pexels. Accessed March 07, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/farm-with-canopies-for-crops-protection-11534647/" target="_blank">https://www.pexels.com/photo/farm-with-canopies-for-crops-protection-11534647/</a>Kan, S. (2023). Farm with canopies for crops protection. Pexels. Accessed March 07, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/piled-green-plant-on-rack-2176158/" target="_blank">https://www.pexels.com/photo/piled-green-plant-on-rack-2176158/</a>Vinh, Q. N. (2019). Piled green plant on rack. Pexels. Accessed March 07, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/ingredients-for-balanced-diet-on-table-5966149/" target="_blank">https://www.pexels.com/photo/ingredients-for-balanced-diet-on-table-5966149/</a>Loring, V. (2020). Ingredients for balanced diet on table. Pexels. Accessed March 07, 2025.</li>
+                        <li><a href="https://www.pexels.com/photo/scientist-checking-crops-in-laboratory-3912509/" target="_blank">https://www.pexels.com/photo/scientist-checking-crops-in-laboratory-3912509/</a>ThisIsEngineering. (2020). Scientist checking crops in laboratory. Pexels. Accessed March 07, 2025.</li>
+                    </ul> 
+                 
+
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+</body>
+</html>

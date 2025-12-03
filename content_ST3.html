@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Responsive Navigation</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+        body{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: "heading heading" "navbar navbar" "sidebar main" "sidebar footer" "sidebar copyright";
+            min-height: 100vh;
+            grid-template-rows: auto auto 1fr auto auto;    
+        }
+
+        header{
+            grid-area: heading;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+
+        aside{
+            grid-area: sidebar;
+        }
+        main{
+            grid-area: main;
+        }
+        main img{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        .img-responsive {
+            width: 300px;  /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /*image fills the area without distortion */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+   
+        
+        footer{
+            grid-area: footer;
+        }
+
+        .copyright{
+            grid-area: copyright;
+        }
+
+
+        /*SIDEBAR*/
+        *{
+                list-style: none;
+                text-decoration: none;
+            }
+
+          
+            .wrapper{               
+                top: 0;
+                width: 170px;
+                min-height: 100vh;
+                background: rgb(185, 255, 165);
+                padding: 13px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: sticky;
+            }
+
+
+            .wrapper .sidebar ul li{
+                padding: 12px;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                border-top: 1px solid rgba(225,225,225,0.05);
+            }
+
+            .wrapper .sidebar ul li a{
+                color: black;
+                display: block;
+            }
+
+            .wrapper .sidebar ul li:hover{
+                background-color: #83f860;
+                transform: translateY(5px);
+                transition: all 0.5s;
+            }
+
+            .wrapper .sidebar .gotoTop:hover{
+                transform: translateY(5px);
+                transition: all 0.5s ease-in-out;
+                background-color: #c8fdb8;
+                cursor: pointer;
+            }
+
+            .wrapper .sidebar .gotoTop{
+                position: absolute;
+                left: 50px;
+                padding: 15px;
+                background: #83f860;
+                border: 2px solid green;
+                font-size: 15px;
+                border-radius: 20px;
+                margin-top: 50px;
+                left: 25%;
+            }
+            .img-responsive {
+                max-width: 100%;
+                height: auto;
+            }
+
+
+    </style>
+    </head>
+	<body>
+        <header>
+            <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile-20250302T061744Z-001/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile-20250302T061744Z-001/menue.png" alt="menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+        <aside>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#differ">How Individual Can Make a Difference?</a></li>
+                        <li><a href="#volunteer">Volunteering for Hunger Relief</a></li>
+                        <li><a href="#banks">Donating to Food Banks and Charities</a></li>
+                        <li><a href="#solutions">Advocating for Hunger Solutions</a></li>
+                        <li><a href="#Aware">Hosting Fundraisers and Awareness Campaigns</a></li>
+                        
+                        <!--<li><a href="#">Section 7</a></li>-->
+                    </ul>
+                    <button class="gotoTop">
+                        Go to Top
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h2 id="differ">How Individual Can Make a Difference?</h2>
+            <p>People hold essential responsibility to eliminate hunger worldwide. Individuals who take different actions can help establish an environment where every person has enough nutritious food for daily sustenance. Several impactful approaches exist that allow people to make positive changes in hunger reduction efforts.</p>
+            <h2>How You Can Help End Hunger: Actions You Can Take Today</h2>
+            <p>Private involvement stands essential to remove hunger problems. Numerous significant changes can emerge when people volunteer while donating money and advocate for change and organize community events. Participation in this type of work both gives prompt help to hungry people and helps create lasting solutions for food insecurity.</p>
+                <img src="imageFile-20250302T061744Z-001/communitykitchens.jpg" alt=" community Kitchens" class="img-responsive">
+                <p>All Saints' Birmingham. (n.d.). Serve the Community Kitchen. Retrieved March 8, 2025, from https://www.allsaintsbhm.org/serve-the-community-kitchen</p>
+
+            
+            <h2 id="volunteer">Volunteering for Hunger Relief</h2>
+            <p>Engaging in food bank or pantry or meal program work with your time and skills makes hunger relief become real.  Volunteers at these organizations undertake both raising funds through events and information distribution about food deprivation and food delivery sorting. The implementation of practical community engagement activities ensures necessary support gets to needy individuals while building better connections between neighbors.</p>
+                <img src="imageFile-20250302T061744Z-001/volunteer.jpg" alt="volunteer" class="img-responsive"> 
+                <p>Pexels. (n.d.). Volunteer images collection. Retrieved March 8, 2025, from https://www.pexels.com/search/volunteer/</p>
+            
+            <h2 id="banks">Donating to Food Banks and Charities</h2>
+            <p>The operation of hunger relief organizations depends completely on financial donations and food contributions. The organizations use donor funds to purchase and manage food distribution for needy individuals. To effectively combat hunger organizations need regular financial support as well as donated goods no matter what type of contribution they are.</p>
+                <img src="imageFile-20250302T061744Z-001/foodcharity.jpg" alt="foodcharity" class="img-responsive"> 
+                <p>iStock. (n.d.). Food collection photos. Retrieved March 8, 2025, from https://www.istockphoto.com/photos/food-collection</p>
+            
+            <h2 id="solutions">Advocating for Hunger Solutions</h2>
+            <p>People who practice advocacy work to spread knowledge about hunger causes while influencing governmental decisions to resolve the problem.The collapse of food insecurity requires individuals to teach others while connecting with lawmakers to implement legislation that fights food shortage. Organizations which engage in advocacy work to extend hunger victims' voices through their platforms while pushing lasting hunger resolution initiatives.</p>
+                <img src="imageFile-20250302T061744Z-001/hungervictims.jpg" alt=" hungervictims" class="img-responsive"> 
+                <p>iStock. (n.d.). Africa hunger photos. Retrieved March 8, 2025, from https://www.istockphoto.com/photos/africa-hunger</p>
+            
+            <h2 id="Aware">Hosting Fundraisers and Awareness Campaigns</h2>
+            <p>The combination of charitable fundraiser events with tape-focused workshops and bake events raises money and public consciousness about hunger relief projects. Community events support hunger relief initiatives by uniting citizens while teaching them about food insecurity while fostering financial support for hunger programs. Innovative activities together with inclusive practices serve to collect resources while generating public enthusiasm for collective projects.</p>
+                <img src="imageFile-20250302T061744Z-001/awareness.jpg" alt="awareness" class="img-responsive">
+                <p>iStock. (n.d.). 3D isometric flat vector conceptual illustration of reducing food waste [Vector illustration]. Retrieved March 8, 2025, from https://www.istockphoto.com/photo/1403121168</p>
+            
+            
+            
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+	</body>
+</html>

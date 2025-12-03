@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Page ST2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "heading heading" "navbar navbar" "sidebar main" "sidebar footer" "sidebar copyright";
+        min-height: 100vh;
+        grid-template-rows: auto auto 1fr auto auto;
+      }
+
+      main {
+        margin-left: 0; /* Added margin to avoid overlap with sidebar */
+      }
+
+      header {
+        grid-area: heading;
+      }
+
+      nav {
+        grid-area: navbar;
+      }
+
+      aside {
+        grid-area: sidebar;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      .copyright {
+        grid-area: copyright;
+      }
+
+      .wrapper {
+        top: 0;
+        width: 170px;
+        min-height: 100vh;
+        background: rgb(185, 255, 165);
+        padding: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: sticky;
+      }
+
+      .wrapper .sidebar ul li {
+		list-style:none;
+        padding:12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-top: 1px solid rgba(225, 225, 225, 0.05);
+		text-align: center;
+      }
+
+      .wrapper .sidebar ul li a {
+        color: black;
+		left:0;
+      }
+
+      .wrapper .sidebar ul li:hover {
+        background-color: #83f860;
+        transform: translateY(5px);
+        transition: all 0.5s;
+      }
+
+      .wrapper .sidebar .gotoTop:hover {
+        transform: translateY(5px);
+        transition: all 0.5s ease-in-out;
+        background-color: #c8fdb8;
+        cursor: pointer;
+      }
+
+      .wrapper .sidebar .gotoTop {
+        position: absolute;
+        left: 50px;
+        padding: 15px;
+        background: #83f860;
+        border: 2px solid green;
+        font-size: 15px;
+        border-radius: 20px;
+        margin-top: 50px;
+        left: 25%;
+        color: black;
+      }
+
+      main h1 {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(78, 248, 78);
+        padding: 5px;
+        flex-wrap: wrap;
+      }
+
+      main h2 {
+        padding: 10px;
+      }
+
+      main p {
+        font-size: 20px;
+        padding: 10px;
+        text-align: justify;
+      }
+
+      main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Together, we can ensure no plate is ever empty</h3>
+    </header>
+
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+      </div>
+      <div class="toggle" onclick="toggleMenu()">
+        <a href="#"><img src="imageFile/menue.png" alt="Menue" width="40"></a>
+      </div>
+      <ul class="menue">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="userProfile_ST4.html">User Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+
+	<script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+    <aside>
+      <div class="wrapper">
+        <div class="sidebar">
+          <ul>
+            <li><a href="#sec1">Sustainable Agriculture Practices</a></li>
+            <li><a href="#sec2">Vertical Farming and Urban Agriculture</a></li>
+            <li><a href="#sec3">The Role of Technology in Food Security</a></li>
+            <li><a href="#sec4">Nutrition-Focused Approaches</a></li>
+            <li><a href="#sec5">Reduction of Food Waste</a></li>
+          </ul>
+          <a href="#top" class="gotoTop">Go to Top</a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <h1 id="top">Innovative Solutions to Combat Hunger</h1>
+      <div id="sec1">
+        <h2>Sustainable Agriculture Practices</h2>
+        <img src="imageFile/sustainableAgri.jpg" alt="Sustainable Agriculture">
+        <p>
+                    The solution of Vertical farming lets agricultural producers raise their crops across multiple stacked levels or vertical columns primarily situated within cities. 
+                    The technique operates within confined conditions that enable metropolitan zones to grow food products without occupying extensive acreage. 
+                    land. Vertical farms operate from buildings and warehouses as well as by utilizing rooftops. This helps bring fresh produce 
+                    The method uses limited land space to enable crop production near urban areas where normal farming space is scarce thus limiting the need for long-distance food transportation. 
+                    These systems enable reduced prices at the market as well as decreased environmental emissions.
+                </p>
+                <p>
+                    Sustainable agriculture depends heavily on the support of farmers in nearby areas together with their surrounding communities. 
+                    Small-scale farming which serves local demands is the preferred investment over industrial farming at large scale. 
+                    The farms currently serve earnings before considering human needs. Knowledge and practical tools given to local farmers lead to their empowerment. 
+                    The agricultural systems enable higher food production with environmental support. Mounting this effort creates opportunities that reduce food scarcity amid hunger problems. 
+                    The distribution of food resources becomes more accessible and affordable for people who are acutely in need. 
+                </p>
+      </div>
+
+      <div id="sec2">
+        <h2>Vertical Farming and Urban Agriculture</h2>
+        <img src="imageFile/verticalFarming.jpg" alt="Vertical Farming">
+        <p>
+                    Vertical farming represents a fresh farming approach which arranges plants into multiple levels or vertical structures within city spaces. 
+                    The limited-space technique enables cities to maximize their food production capacity through non-extensive land usage. 
+                    land. The design of vertical farms enables installation in both buildings and warehouses and rooftops. This helps bring fresh produce. 
+                    The practice works in limited agricultural areas to create extra farming locations while cutting down expenses from food transport across long distances. 
+                    The method offers reduced expenses for food production alongside reduced environmental emissions from carbon.
+                </p>
+
+                <p>
+                    Cities gain self-food-sustainability through the practice of urban agriculture that incorporates vertical farming systems. 
+                    Through urban agriculture people receive the chance to establish food production in densely populated areas. This can improve food security, 
+                    The establishment of green spaces creates both fresh food accessibility and addresses areas lacking in grocery stores. With the rising global population, 
+                    Vertical farming solutions in urban environments provide a solution to feed more individuals through edible production systems that decrease rural agricultural pressures.
+                </p>
+      </div>
+
+      <div id="sec3">
+        <h2>The Role of Technology in Food Security</h2>
+        <img src="imageFile/foodTech.jpg" alt="Food Security">
+        <p>
+                    The advancement of technology contains a vital function for enhancing food security levels through optimized and dependable food production procedures. Modern farming tools, 
+                    Modern farming equipment that applies GPS systems together with automated irrigation systems allows farmers to conserve water along with fertilizer through optimized resources management. 
+                    growing more food. Scientific progress in biotechnology resulted in creating plants that display increased disease resistance. 
+                    Decreased crop losses because of extreme weather conditions enable farmers to maintain continuous food supply and increased production efficiency.
+                </p>
+                <p>
+                    Tech advances manage food transportation alongside storage operations which leads to lower food discard and higher accessibility of food supplies. For example, digital platforms 
+                    Technology allows farmers to sell directly to consumers which reduces food expenses by eliminating intermediary distribution cost. The deployment of cold storage systems leads to food preservation because of this technology. 
+                    The preservation techniques enabled by technology extend food quality for extensive periods thus enabling better commercial transportation of perishable products. The new technological advancements serve as essential elements for achieving their objectives. 
+                    The problem of food scarcity receives special attention through technology in areas with limited resources and inadequate food distribution structures.
+                </p>
+      </div>
+
+      <div id="sec4">
+        <h2>Nutrition-Focused Approaches</h2>
+        <img src="imageFile/nutrition.jpg" alt="Nutrition">
+        <p>
+                    The hunger relief strategies that focus on nutrition aim to deliver healthy food as well as necessary sustenance despite the food shortage 
+                    and balanced. The organizations shift their distribution strategy from basic staples such as rice or maize toward nutritious dietary items. 
+                    Such methods work to enhance the health state of both individuals and their communities. The nutrition program provides nutritious food containing vitamins and minerals and proteins as a solution to nutritional deficiencies. 
+                    Nutritional deficiencies appear frequently in food insecure areas because of their particular nutritional deficiencies.
+                </p>
+                <p>
+                    The fundamental aspect of hunger relief includes both the supply of food together with educational programs about nutrition. Education programs about healthy nutrition should include lessons about meal preparation as well as dietary knowledge for local communities. 
+                    The acquisition of knowledge about producing one's own nutritious food brings lasting advantages for general health. Hunger relief succeeds when groups get proper nutrition-based care tailored to individual requirements. 
+                    Such relief programs simultaneously decrease hunger and enhance community health while enabling their lasting development.
+                </p>
+      </div>
+
+      <div id="sec5">
+        <h2>Reduction of Food Waste</h2>
+        <img src="imageFile/foodWaste.jpg" alt="Food Waste">
+        <p>
+                    The widespread discarding of food during global food production stands as a major source of the hunger problem. Food waste 
+                    The reduction of wasted food seeks to challenge food discarding practices through enhanced storage approaches alongside enhanced food tagging strategies and leftover use promotion. 
+                    consumers to use leftovers. The effort to reduce hunger requires effective programs that rescue surplus food products from being wasted and distribute them among the needy. This way, food that would 
+                    Utilizing surplus food which otherwise would end up as waste helps provide nourishment to the needy population thus simultaneously decreasing both hunger-related problems and negative environmental consequences.
+                </p>
+                <p>
+                    The reduction of food waste profoundly relies on making people more alert about the extent of waste occurring between farms and households and every step of the supply chain. 
+                    The reduction of food waste depends on consumers purchasing needed amounts of food and using all their purchased food items before donating surplus portions to minimize waste produced by the food system. By working together 
+                    Strategies aimed at reducing food waste will maximize available resources leading to improved food availability for the community.
+                </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+              <h2>Follow Us</h2>
+              <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+              <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+              <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+              <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+          </div>
+    </footer>
+
+    <div class="copyright">
+      <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+  </body>
+</html>

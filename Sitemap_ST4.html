@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sitemap</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                background-color: white;
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .box {
+                background-color: #7dd3c7;
+                padding: 15px 30px;
+                border-radius: 5px;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                width: 200px;
+                text-align: center;
+            }
+
+            .sub-box {
+                background-color: #a985d6;
+                padding: 10px;
+                border-radius: 5px;
+                margin: 5px;
+                font-size: 16px;
+                width: 150px;
+            }
+
+            .sub-box.projects { background-color: #df9b90; }
+            .sub-box.support { background-color: #f4d37d; }
+            .sub-box.about { background-color: #b5b59b; }
+
+            .row {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            svg rect {
+                transition: fill 0.3s ease-in-out; /* Smooth color transition */
+            }
+
+            svg rect:hover {
+                opacity: 0.5; /* Change color when hovered */
+                cursor: pointer; /* Show pointer */
+            }
+
+        </style>
+	</head>
+
+	<body>
+        <header>
+            <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile/menue.png" alt="Menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+        <main>
+            <svg width="1200" height="500" viewBox="0 -15 800 500" xmlns="http://www.w3.org/2000/svg">
+                <!-- Home -->
+                <rect x="350" y="20" width="100" height="50" fill="#add8e6" stroke="black"/>
+                <text id="text" x="380" y="50" font-size="14" fill="black"><a href="home.html">Home</a></text>
+            
+                <!-- Main Categories -->
+                <rect x="-100" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="-80" y="130" font-size="14" fill="black"><a href="Volunteerpage01ST01.html">Volunteer</a></text>
+            
+                <rect x="80" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="110" y="130" font-size="14" fill="black"><a href="table.html">Table</a></text>
+            
+                <rect x="260" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="275" y="130" font-size="14" fill="black"><a href="userProfile_ST4.html">User Profile</a></text>
+            
+                <rect x="440" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="460" y="130" font-size="14" fill="black"><a href="feedback.html">Feedback</a></text>
+            
+                <rect x="620" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="645" y="130" font-size="14" fill="black"><a href="Sitemap_ST4.html">Sitemap</a></text>
+
+                <rect x="800" y="100" width="100" height="50" fill="#7dd3c7" stroke="black"/>
+                <text x="830" y="130" font-size="14" fill="black"><a href="team.html">Team</a></text>
+            
+                <!-- Subcategories - Volunteer -->
+                <rect x="-70" y="180" width="150" height="40" fill="#a985d6" stroke="black"/>
+                <text x="-50" y="205" font-size="12" fill="black"><a href="Volunteerpage01ST01.html">Volunteer Page</a></text>
+            
+                <rect x="-70" y="230" width="150" height="40" fill="#a985d6" stroke="black"/>
+                <text x="-50" y="255" font-size="12" fill="black"><a href="Volunteerpage02ST01.html">Volunteer Programs</a></text>
+            
+                <!-- Subcategories - Table -->
+                <rect x="110" y="180" width="150" height="40" fill="#df9b90" stroke="black"/>
+                <text x="135" y="205" font-size="12" fill="black"><a href="table.html#intro">Gobal Hunger Index</a></text>
+            
+                <rect x="110" y="230" width="150" height="40" fill="#df9b90" stroke="black"/>
+                <text x="145" y="255" font-size="12" fill="black"><a href="table.html#southasia">South Asia</a></text>
+            
+                <rect x="110" y="280" width="150" height="40" fill="#df9b90" stroke="black"/>
+                <text x="145" y="305" font-size="12" fill="black"><a href="table.html#eastasia">East Asia</a></text>
+
+                <!-- Subcategories - User Profile -->
+                <rect x="290" y="180" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="200" font-size="12" fill="black"><a href="userProfile_ST4.html#profileinfo">Profile Info</a></text>
+             
+                <rect x="290" y="220" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="240" font-size="12" fill="black"><a href="userProfile_ST4.html#goals">Goals</a></text>
+             
+                <rect x="290" y="260" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="280" font-size="12" fill="black"><a href="userProfile_ST4.html#frustrations">Frustrations</a></text>
+                
+                <rect x="290" y="300" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="320" font-size="12" fill="black"><a href="userProfile_ST4.html#experience">Experience</a></text>
+                
+                <rect x="290" y="340" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="360" font-size="12" fill="black"><a href="userProfile_ST4.html#volunteering">Volunteering</a></text>
+                
+                <rect x="290" y="380" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="400" font-size="12" fill="black"><a href="userProfile_ST4.html#un-goals">UN Goals</a></text>
+                
+                <rect x="290" y="420" width="120" height="30" fill="#f4d37d" stroke="black"/>
+                <text x="320" y="440" font-size="12" fill="black"><a href="userProfile_ST4.html#contact-form">Contact Form</a></text>
+
+                <!-- Subcategories - Feedback -->
+                <rect x="470" y="180" width="140" height="30" fill="#b5b59b" stroke="black"/>
+                <text x="500" y="200" font-size="12" fill="black"><a href="feedback.html#personaldetails">Personal Details</a></text>
+            
+                <rect x="470" y="220" width="140" height="30" fill="#b5b59b" stroke="black"/>
+                <text x="500" y="240" font-size="12" fill="black"><a href="feedback.html#feedbackdetails">Feedback Details</a></text>
+            
+                <!-- Subcategories - Sitemap -->
+                <rect x="650" y="180" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="200" font-size="12" fill="black"><a href="home.html">Home</a></text>
+             
+                <rect x="650" y="220" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="240" font-size="12" fill="black"><a href="Volunteerpage01ST01.html">Volunteer</a></text>
+             
+                <rect x="650" y="260" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="280" font-size="12" fill="black"><a href="table.html">Table</a></text>
+
+                <rect x="650" y="300" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="320" font-size="12" fill="black"><a href="userProfile_ST4.html">User Profile</a></text>
+
+                <rect x="650" y="340" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="360" font-size="12" fill="black"><a href="feedback.html">Feedback</a></text>
+
+                <rect x="650" y="380" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="400" font-size="12" fill="black"><a href="team.html">Team</a></text>
+
+                <rect x="650" y="420" width="120" height="30" fill="#df9b90" stroke="black"/>
+                <text x="680" y="440" font-size="12" fill="black"><a href="#">Contact</a></text>
+
+                <!-- Subcategories - Team -->
+                <rect x="830" y="180" width="120" height="30" fill="#a985d6" stroke="black"/>
+                <text x="860" y="200" font-size="12" fill="black"><a href="pageEditorST01.html">Student 1</a></text>
+            
+                <rect x="830" y="220" width="120" height="30" fill="#a985d6" stroke="black"/>
+                <text x="860" y="240" font-size="12" fill="black"><a href="pageEditor_ST2.html">Student 2</a></text>
+            
+                <rect x="830" y="260" width="120" height="30" fill="#a985d6" stroke="black"/>
+                <text x="860" y="280" font-size="12" fill="black"><a href="pageEditor_ST3.html">Student 3</a></text>
+            
+                <rect x="830" y="300" width="120" height="30" fill="#a985d6" stroke="black"/>
+                <text x="860" y="320" font-size="12" fill="black"><a href="pageEditor_ST4.html">Student 4</a></text>
+        
+                <!-- Lines Connecting Elements -->
+                <line x1="400" y1="70" x2="400" y2="125" stroke="black"/>
+                <line x1="0" y1="125" x2="80" y2="125" stroke="black"/>
+                <line x1="180" y1="125" x2="260" y2="125" stroke="black"/>
+                <line x1="360" y1="125" x2="440" y2="125" stroke="black"/>
+                <line x1="540" y1="125" x2="620" y2="125" stroke="black"/>
+                <line x1="720" y1="125" x2="800" y2="125" stroke="black"/>
+                
+
+                <line x1="-80" y1="150" x2="-80" y2="250" stroke="black"/>
+                <line x1="100" y1="150" x2="100" y2="300" stroke="black"/>
+                <line x1="280" y1="150" x2="280" y2="440" stroke="black"/>
+                <line x1="460" y1="150" x2="460" y2="238" stroke="black"/>
+                <line x1="640" y1="150" x2="640" y2="440" stroke="black"/>
+
+                <line x1="640" y1="200" x2="650" y2="200" stroke="black"/>
+                <line x1="640" y1="240" x2="650" y2="240" stroke="black"/>
+                <line x1="640" y1="280" x2="650" y2="280" stroke="black"/>
+                <line x1="640" y1="320" x2="650" y2="320" stroke="black"/>
+                <line x1="640" y1="360" x2="650" y2="360" stroke="black"/>
+                <line x1="640" y1="400" x2="650" y2="400" stroke="black"/>
+                <line x1="640" y1="440" x2="650" y2="440" stroke="black"/>
+                <line x1="820" y1="150" x2="820" y2="318" stroke="black"/>
+
+                <line x1="-80" y1="200" x2="-70" y2="200" stroke="black"/>
+                <line x1="-80" y1="250" x2="-70" y2="250" stroke="black"/>
+
+                <line x1="100" y1="200" x2="110" y2="200" stroke="black"/>
+                <line x1="100" y1="250" x2="110" y2="250" stroke="black"/>
+                <line x1="100" y1="300" x2="110" y2="300" stroke="black"/>
+
+                <line x1="280" y1="200" x2="290" y2="200" stroke="black"/>
+                <line x1="280" y1="240" x2="290" y2="240" stroke="black"/>
+                <line x1="280" y1="280" x2="290" y2="280" stroke="black"/>
+                <line x1="280" y1="320" x2="290" y2="320" stroke="black"/>
+                <line x1="280" y1="360" x2="290" y2="360" stroke="black"/>
+                <line x1="280" y1="400" x2="290" y2="400" stroke="black"/>
+                <line x1="280" y1="440" x2="290" y2="440" stroke="black"/>
+
+                <line x1="460" y1="198" x2="470" y2="198" stroke="black"/>
+                <line x1="460" y1="238" x2="470" y2="238" stroke="black"/>
+
+                <line x1="280" y1="200" x2="290" y2="200" stroke="black"/>
+                <line x1="280" y1="240" x2="290" y2="240" stroke="black"/>
+                <line x1="280" y1="280" x2="290" y2="280" stroke="black"/>
+                <line x1="280" y1="320" x2="290" y2="320" stroke="black"/>
+                <line x1="280" y1="360" x2="290" y2="360" stroke="black"/>
+                <line x1="280" y1="400" x2="290" y2="400" stroke="black"/>
+                <line x1="280" y1="440" x2="290" y2="440" stroke="black"/>
+
+                <line x1="820" y1="198" x2="830" y2="198" stroke="black"/>
+                <line x1="820" y1="238" x2="830" y2="238" stroke="black"/>
+                <line x1="820" y1="278" x2="830" y2="278" stroke="black"/>
+                <line x1="820" y1="318" x2="830" y2="318" stroke="black"/>
+
+            </svg>
+        
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="table.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+	</body>
+</html>

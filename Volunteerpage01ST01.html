@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Volunteer Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .banner {
+                width: 50%;
+                height: 100vh;
+                background: url('images/Banner02.jpg') no-repeat center center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px; 
+                margin: 0;
+            }
+            .banner-content {
+                max-width: 600px;
+                color: rgb(0, 0, 0);
+                position: absolute;
+                top: 70%; /* Moves content to the middle */
+                left: 55%; /* Moves content to the left */
+                transform: translateY(-50%);
+            }
+    
+            .banner-content h1 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+    
+            .banner-content h1 span {
+                background: rgb(177, 238, 158);
+                padding: 1px 20px;
+                border-radius: 4px;
+            }
+    
+            .banner-content p {
+                margin: 15px 0;
+                font-size: 20px;
+                line-height: 1.6;
+                font-weight: bold;
+            }
+    
+            .btn {
+                display: inline-block;
+                padding: 12px 20px;
+                background: rgb(155, 255, 125);
+                color: black;
+                text-decoration: none;
+                font-size: 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+    
+            .btn:hover {
+                background: rgb(21, 238, 220);
+            }
+            @media (max-width: 768px) {
+                /* Banner Adjustments */
+                .banner {
+                    height: 40vh;
+                    background-size: cover; /* Ensure banner image scales well */
+                }
+
+                .banner-content h1 {
+                    font-size: 1.5rem; /* Smaller font size on mobile */
+                }
+
+                .banner-content p {
+                    font-size: 1rem; /* Adjust paragraph size */
+                }
+
+                .btn {
+                    font-size: 14px; /* Adjust button size */
+                    padding: 10px 18px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="images/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="images/menue.png" alt="Menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+    <main>    
+        <div class = "banner">
+            <div class="banner-content">
+            <h1>Together We Can <span>Save Lives</span></h1>
+                <p>Millions of lives are lost every year due to hunger, with countless families struggling to find their next meal. Volunteering to fight hunger can make a real impact by providing food, resources, and support to those in need. From distributing meals to supporting sustainable food programs, every effort helps save lives and bring hope to communities worldwide. By coming together, we can work toward a future where no one has to suffer from hunger.
+                </p>
+                <a href="Volunteerpage02ST01.html" class="btn">Volunteer to End Hunger</a>
+            </div>
+        </div>
+        <script>
+            const images = [
+                "images/Banner02.jpg", 
+                "images/Banner.png",
+                "images/Banner07.JPEG",
+                "images/Banner08.Webp",
+                "images/Banner10.webp",
+            ];
+
+            let currentImage = 0;
+
+            function changeImage() {
+                document.querySelector('.banner').style.backgroundImage = `url(${images[currentImage]})`;
+                currentImage = (currentImage + 1) % images.length; // Loop through the images
+            }
+
+            // Change image every 5 seconds
+            setInterval(changeImage, 5000);
+
+            // Initial image load
+            changeImage();
+         </script>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Content Page</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+        body{
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas: "heading heading" "navbar navbar" "sidebar main" "sidebar footer" "sidebar copyright";
+            min-height: 100vh;
+            grid-template-rows: auto auto 1fr auto auto;
+        }
+
+        header{
+            grid-area: heading;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+
+        aside{
+            grid-area: sidebar;
+        }
+
+        main{
+            grid-area: main;
+        }
+
+        footer{
+            grid-area: footer;
+        }
+
+        .copyright{
+            grid-area: copyright;
+        }
+        .content h1{
+                text-align: center;
+        }
+        .link {
+            color: blue;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .resize-image {
+            width: 300px;
+            height: 200px;
+        }
+        .center-image {
+            display: block;
+            margin: 0 auto;
+        }
+        .resize-image {
+            width: 420px;
+            height: 300px;
+        }
+
+
+        /*SIDEBAR*/
+        *{
+                list-style: none;
+                text-decoration: none;
+            }
+
+          
+            .wrapper{               
+                top: 0;
+                width: 170px;
+                min-height: 100vh;
+                background: rgb(185, 255, 165);
+                padding: 13px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: sticky;
+            }
+
+
+            .wrapper .sidebar ul li{
+                padding: 12px;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                border-top: 1px solid rgba(225,225,225,0.05);
+            }
+
+            .wrapper .sidebar ul li a{
+                color: black;
+                display: block;
+            }
+
+            .wrapper .sidebar ul li:hover{
+                background-color: #83f860;
+                transform: translateY(5px);
+                transition: all 0.5s;
+            }
+
+            .wrapper .sidebar .gotoTop:hover{
+                transform: translateY(5px);
+                transition: all 0.5s ease-in-out;
+                background-color: #c8fdb8;
+                cursor: pointer;
+            }
+
+            .wrapper .sidebar .gotoTop{
+                position: absolute;
+                left: 50px;
+                padding: 15px;
+                background: #83f860;
+                border: 2px solid green;
+                font-size: 15px;
+                border-radius: 20px;
+                margin-top: 50px;
+                left: 25%;
+            }
+    </style>
+    </head>
+	<body>
+        <header>
+            <h3 id="gotoTop">Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="images/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="images/menue.png" alt="Menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+        <aside>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#NaturalDisasters">Natural Disasters</a></li>
+                        <li><a href="#PoliticalInstability">Political Instability</a></li>
+                        <li><a href="#ClimateImpact">Climate Impact</a></li>
+                        <li><a href="#EconomicInequality">Economic Inequality</a></li>
+                        <li><a href="#Education&Prevention">Education & Prevention</a></li>
+                        <!--<li><a href="#">Section 7</a></li>-->
+                    </ul>
+                    <a href="#gotoTop" class="gotoTop">Go to Top</a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="content">
+                <h1>The Causes of Hunger in Sri Lanka</h1>
+                <p>The principal causes of hunger in Sri Lanka stem from economic problems together with political leadership decisions and climate-based catastrophes. The economic hard times of the country resulted in short supply and rising prices for fundamental necessities which include food. The immediate prohibition of chemical fertilizers by political authorities caused agricultural yields to decrease thereby worsening food shortages. The disruption of farming activities due to climate-related disasters caused food amounts to decrease. Several vortexes of factors have created food scarcity conditions which particularly affect children within families. Solving this crisis demands multiple organizations to work together for economic stabilization and launch sustainable farming strategies and boost emergency preparedness.</p>
+                <img src="images/slchild01.png" alt="Sri Lankan children" class="center-image resize-image" >
+                <h2 id="NaturalDisasters">
+                    Natural Disasters and Hunger in Sri Lanka
+                </h2>
+                <p>Floods droughts along with cyclones often strike Sri Lanka which leads to major damage of agricultural lands and insecure food availability. Both flooding and dry conditions pose major hazards for agriculture infrastructure since they wipe out crops and block transportation routes thus both affect food distribution and erosion of water supplies results in smaller crop yields. The drought of 2017 proved extremely severe for Sri Lanka as it reduced rice cultivation by 40% while 900,000 people faced food insecurity. Harsh weather systems together with cyclones damage agricultural land to such an extent that they create further food shortages which intensify hunger levels. The solution to climate-relate farming challenges can be found by establishing early warning systems and better disaster preparedness measures and climate-resilient farming practices.</p>
+                <h3>Key Impacts</h3>
+                    <ul>
+                        <li><strong>Floods:</strong>The floodwater destroys agricultural fields while forcing people to relocate and disrupts their food distribution networks.</li>
+                        <li><strong>Droughts:</strong>The quantity of water decreases alongside reduced harvests which results in food insecurity.</li>
+                        <li><strong>Cyclones & Storms:</strong>The countermovement destroys agricultural fields which disrupts farming operations and negatively impacts community survival.</li>
+                    </ul>
+                    <img src="images/slchild02.jpg" alt="Sri Lankan children" class="center-image resize-image" >
+                    <a href="https://reliefweb.int/report/sri-lanka/sri-lanka-rapid-food-security-assessment-flood-impact-ampara-district-february-2024" class="link">ReliefWeb - Flood Impact in Ampara, 2024</a><br>
+                    <a href="https://www.fao.org/newsroom/detail/Sri-Lanka-s-food-production-hit-by-extreme-drought-followed-by-floods/en" class="link">FAO - Sri Lanka’s Drought & Food Security, 2017</a>
+                <h2 id="PoliticalInstability">
+                    Political Instability and Conflict
+                </h2>
+                <p>The political instability that has gripped Sri Lanka since 2022 has produced substantial negative effects on food security throughout the nation. The economic crisis of 2022 resulted in a severe national shortage of essential goods including food and fuel throughout the country. The crisis ignited broad demonstrations that made President Gotabaya Rajapaksa and other significant government officials resign. Political instability worsened existing financial problems to create unusually difficult circumstances for obtaining food.</p>
+                <p>The Janatha Vimukthi Peramuna party leader Anura Kumara Dissanayake became president of Sri Lanka in September 2024 which represented a major political transition. The current leadership must tackle two major challenges including economic recovery together with food security issues.</p>
+                <p>The International Monetary Fund (IMF) approved the third review of Sri Lanka's $2.9 billion bailout during February 2025 which generated an extra $334 million release. The total economic rescue funds now reach $1.3 billion after the recent payment release by the International Monetary Fund.</p>
+                <p>The issue of food insecurity continues to affect particular regions even though global food production has shown improvement so it remains necessary to work on political stabilization along with comprehensive food distribution policies to achieve long-term food security.</p>
+                <img src="images/sleconomic_crisis01.jpg" alt="economic crisis protest" class="center-image resize-image" >
+                <a href="https://www.wfp.org/news/food-insecurity-improves-sri-lanka-prevails-within-specific-regions" class="link">WFP - Food Insecurity in Sri Lanka, 2025</a><br>
+                <h2 id="ClimateImpact">
+                    Climate Change and Its Impact on Food Security
+                </h2>
+                <p>The food security of Sri Lanka faces growing danger from climate change because it interrupts agricultural productivity through temperature increases and unstable rainfall patterns along with severe weather conditions. The farming operations of the country remain highly susceptible to both droughts and floods because seasonal rainfall serves as its primary agricultural water source across Dry and Intermediate Zones. Food shortages emerge from reduced crop yields and affected livestock causing harm to both rural populace and national food supply.</p>
+                <p>The unpredictable weather patterns alongside both dry spells and floods destroy staple crops including rice and tea thus causing economic losses to farmers while pushing food prices upward. The rise in temperatures leads to both land degradation and lower water supplies for irrigation which in turn restricts farming yields.</p>
+                <img src="images/slrainfall01.webp" alt="Rainfall trends in Sri Lanka" class="center-image resize-image" >
+                <a href="https://www.researchgate.net/publication/273448637_Climate_Climate_Risk_and_Food_Security_in_Sri_Lanka_Need_for_Strengthening_Adaptation_Strategies" class="link">ResearchGate - Climate Risk & Food Security in Sri Lanka</a><br>
+                <a href="https://www.nature.com/articles/s41599-021-00917-4" class="link">Nature - Climate Change & Food Security in Sri Lanka</a>
+                <h2 id="EconomicInequality">
+                    Economic Inequality and Hunger
+                </h2>
+                <p>Economic inequality throughout Sri Lanka caused extensive food shortage and hunger throughout the country after the recent economic crisis unfolded. The COVID-19 pandemic together with the economic crisis drove poverty levels higher so that about one-quarter of the population began living below the poverty line making it harder for them to get nutritious food. </p>
+                <p>Statistical data shows that by July 2022 food insecurity affected 6.3 million people among the 38% of households who encountered moderate to severe food distress. </p>
+                <p>The current economic situation forces families to cut down their meals and sometimes forego eating altogether while experiencing multiple days of complete fasting. </p>
+                <p>Lowered household income during the economic decline has created additional barriers to obtain essential food items. Food prices continue to increase because of high inflation rates causing extreme difficulty for low-income families to buy their basic needs. During October 2022 the United States saw acute food insecurity affect 54% of American households which demonstrated the serious extent of the crisis.</p>
+                <p>Sri Lanka must address economic inequality because this action will help reduce hunger throughout the country. To combat food insecurity the government must implement policies designed for fair economic development combined with safeguarding programs while delivering assistance to vulnerable groups of people.</p>
+                <img src="images/sleconomic_inequality01.jpg" alt="economic inequality in sri-lanka" class="center-image resize-image" >
+                <a href="https://www.wfp.org/countries/sri-lanka" class="link">WFP - Sri Lanka Country Brief</a><br>
+                <h2 id="Education&Prevention">
+                    Access to Education and Hunger Prevention
+                </h2>
+                <p>In Sri Lanka school meal programs help unite education and hunger prevention because they advance both learning outcomes and nutritional health status of students. The meal programs offer vital nutrition to students while protecting them through the safety network which makes them attend classes and lowers the number of students who drop out.</p>
+                <p><strong>School Meal Programs:</strong>Since 2003 the National School Meal Programme runs through World Food Programme (WFP) support to provide nutritious meals at schools that boost educational results and combat food shortage. The Home Grown School Feeding project started in 2020 to connect smallholder farmers with schools for locally sourced fresh food that would benefit students and local farmers.</p>
+                <p><strong>Challenges and Impact of the Economic Crisis:</strong>In 2022 when the economy experienced decline both food prices soared while school meal programs received decreased state funding. Many educational institutions experienced difficulties in sustaining daily meal operations which caused students to avoid classes and heightened their vulnerability to food insecurity problems. The research findings from Save the Children showed that food reduction became necessary for half of all Sri Lankan families.</p>
+                <p><strong>Community and Government Initiatives:</strong>Different groups of stakeholders have provided assistance to children who need help because of these obstacles. Through food drives initiated by teachers and parents and Rise Up School Meal program support many thousands of children receive balanced mid-day meals and milk services. The government has established expansion targets for school meal programs to achieve full primary school coverage by 2026 and secondary school coverage by 2030 using local food sources for economic development.</p>
+                <img src="images/slchild03.jpg" alt="Education and hunger prevention" class="center-image resize-image" >
+                <a href="https://riseupschoolmeals.com/" class="link">Rise Up School Meals</a><br>
+                <a href="https://schoolmealscoalition.org/member/sri-lanka" class="link">School Meals Coalition - Sri Lanka</a>
+            </div>
+            
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+	</body>
+</html>

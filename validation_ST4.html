@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page Student 3- Sasni Lasadi</title>
+
+    <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+    <style>    
+        
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        main {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fafafa;
+        }
+        header {
+            text-align: center;
+            background-color: rgb(185, 255, 165);
+            color: black;
+            padding: 10px 0;
+        }
+
+        .ref li{
+            list-style: none;
+            padding-bottom: 9px;
+        }
+
+        aside a{
+            text-decoration : none;
+        }
+
+        aside li{
+            padding-bottom: 4px;
+        }
+        #role{
+            text-align: center;
+            line-height: 0;
+            background-color: #6f6f6de6;
+            color: white;
+            margin-top: 8px;
+            position: relative;
+            left: 1px;
+        }
+
+        .stud {
+            text-align: center;
+            line-height: 0;
+            background-color: #cbccc2ef;
+            color: white;
+            margin-top: 8px;
+        }
+
+        .top {
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+        }
+                
+        .top a {
+            padding: 10px 20px; /* Adds padding for button-like feel */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            text-decoration: none; /* Removes underline */
+            border-radius: 20px; /* Rounds the corners */
+            font-size: 12px; /* Adjust font size */
+            font-weight: bold; /* Make the text stand out */
+        }
+
+        .top a:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+        }
+        .imglogo{
+            width: 35%;
+        }
+        img{
+            width: 90%;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img class="imglogo" src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile/menue.png"menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+            <section id="role">
+                <h2>Sasni Lasadi - Student 4</h2>
+            </section>
+
+            <div class="container">
+                <!-- Main content area -->
+            <main>
+
+            <!-- Update the content of the following sections with the information that corresponds to the pages you implemented  -->
+
+            <section>
+                <h2 id="userprofile">User Profile</h2>
+                    <p>When I checked for validation I had some errors occured.Some of my atrributes had no spaces between them.I fixed it and no errors or warnings were shown later.</p> 
+                    <img src="imageFile/Screenshot (249).png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST4.html"> Back to the page Editor</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section>
+
+            <section>
+                <h2 id="sitemap">Sitemap</h2>
+                <p>No error or warning occured.</p>
+                    <img src="imageFile/Screenshot (250).png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST4.html"> Back to the Page Editor.</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+            <section>
+                <h2 id="contentP">Content Page</h2>
+                <p>No error or warning was occurred.</p>
+                    <img src="imageFile/Screenshot (251).png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST4.html">Back to the Page Editor</a></p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            </section></a></p>
+
+
+            <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                <ul class="top-level-ul">
+                    <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                    <li>Student 4
+                        <ul>
+                            <li><a href="#feedbackVal">User Profile</a> </li>
+                            <li><a href="#teamVal">Sitemap</a></li>
+                            <li><a href="#contentVal">Content page</a></li>
+                        </ul>
+                    </li>    
+                
+                </ul>
+            </aside>
+        </div>
+
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+</body>
+</html>

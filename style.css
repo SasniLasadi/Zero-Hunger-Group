@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        body{
+            background-color: white;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        /*HEADER*/
+        header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(185, 255, 165);
+        }
+
+        /*NAVIGATION*/
+        a, a:hover{
+            text-decoration: none;
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+        }
+
+        nav a{
+            color: black;
+            padding: 14px ;
+        }
+
+        nav .menue a:hover{
+            background: rgb(185, 255, 165);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .logo{
+            flex: 1;
+        }
+
+        .logo a{
+            display: flex;
+            align-items: center;
+        }
+
+        .menue{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .menue li{
+            padding: 15px 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .toggle{
+            font-size: 30px;
+            display: none;
+        }
+
+        @media screen and (max-width: 1110px){
+            nav{
+                display: block;
+                position: relative;
+                padding: 15px 20px;
+            }
+
+            .menue{
+                margin-top: 15px;
+                display: none;
+            }
+
+            .menue.active, .toggle{
+                display: block;
+            }
+
+            .toggle{
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+        }
+
+        /*FOOTER*/
+
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            background-color: hsl(0, 2%, 8%);
+            padding: 10px 0 0 ;
+            color: hsl(0, 0%, 75%);
+            flex-wrap: wrap;
+        }
+
+        .social img{
+            width:30px;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: hsl(0, 0%, 75%);
+        }
+
+
+
+        .copyright{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background-color: rgb(131, 230, 18);
+        }
+
+        .topics {
+            color: rgb(131, 230, 18);
+        }
+
+        .links p a:hover{
+            color: rgb(131, 230, 18);
+        }
+
+        .editorPage p a:hover{
+            color: rgb(131, 230, 18);
+        }

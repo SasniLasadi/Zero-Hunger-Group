@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Sasni Lasdi</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+   body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative; 
+        left: 0;  
+    }
+    #stud{
+        background-color: #6f6f6de6;
+        color: white;
+    }
+    main {
+        flex: 3;
+        min-width: 70%;
+    }
+
+    aside {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+        margin-top: 61px;
+        position: relative;
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+    }
+    section h1{
+        text-align: center;
+    }
+
+    header{
+        text-align:center;
+        background-color: rgb(185, 255, 165);
+        color: black;
+        padding: 15px 0;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center; 
+    }
+
+    img {
+        width: 100%; 
+        max-width: 400px;
+    }
+    .imglogo{
+            width: 35%;
+        }
+
+    .top {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
+
+    .top a {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .top a:hover {
+        background-color: #0056b3;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; 
+        }
+        aside {
+            margin-top: 20px;
+        }
+    }
+
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <h3>Together, we can ensure no plate is ever empty</h3>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img class="imglogo" src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <a href="#"><img src="imageFile/menue.png" alt="Menue"  width="40"></a>
+        </div>
+        <ul class="menue">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="userProfile_ST4.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu(){
+            const menu=document.querySelector('.menue');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+        <section id="stud">
+            <h1>Sasni Lasadi, Student 4</h1>
+        </section>
+    <main>
+        <div class="container">
+            <!-- Main content area -->
+            <main>
+
+                <h4>Splash screen, Volunteer Page, Content Page</h4>
+
+                <section>
+                    <h2 id="userprofile">User Profile</h2>
+                        <h3>Technical Description</h3>
+                            <p>The user profile section employs semantic HTML elements starting with <code>&lt;section&gt;</code> and continuing with <code>&lt;img&gt;</code> and proceeding through <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code> and <code>&lt;ul&gt;</code> to achieve structure while CSS provides visual appeal with accessibility features. The profile utilizes flexbox or grid for responsive arrangement while containing an avatar and bio along with essential specifics. Links to social media platforms together with the "View Resume" button consist of <code>&lt;a&gt;</code> tags that apply hover effects for user engagement.</p> 
+                            <h4>Key HTML Tags</h4>
+                            <p> The webpage implements fundamental HTML tags for content structure and user usability improvement. The HTML document starts with a <code>&lt;html&gt;</code> tag which serves as its main root and contains both metadata in the <code>&lt;head&gt;</code> section together with external stylesheets and scripts. The <code>&lt;body&gt;</code> section possesses two main elements that include the header for introductory material and navigation through <code>&lt;nav&gt;</code> and primary user profile elements within <code>&lt;main&gt;</code>. The page splits into two parts within <code>&lt;main&gt;</code> where <code>.left-section</code> displays user profile information while <code>.right-section</code> shows goals together with experiences and volunteer availability and a contact form. The menu navigation uses lists through <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> elements and <code>&lt;div&gt;</code> components serve to structure and design various sections of the page. The footer contains contact information together with social links and convenient page paths. The final part of the HTML code includes a <code>&lt;script&gt;</code> element that deploys JavaScript programming elements to create both a collapsible menu system and an interactive date selection interface.</p>   
+                            <h4>Key CSS Properties</h4>
+                            <p>Web pages achieve both good looks and user-friendly designs through the CSS (Cascading Style Sheets) process which enhances HTML elements. SSERT controls text color settings that enable users to select colors for better appearance and readability. The background-color property provides elements with basic background shades that boost visible differences between elements and brand identification. Every element needs proper spacing which the margin and padding properties achieve by setting external space and internal space measurements. The display property regulates how different elements position themselves in a page while block, inline and flex serve as responsive layout options. Edge-to-edge rounded corners happen due to the border-radius property which modernizes traditional buttons along with cards and various UI components.</p>
+                        <h3>Accessibility</h3>
+                        <p>Web design accessibility allows users with disabilities along with all others to navigate websites through interaction features. This code includes multiple best practices that serve users with different requirements. Alt attributes with descriptive language allow screen readers to provide access to visual information for users who depend on screen readers. Links in the document become accessible through href attributes which define destination paths for <a> elements. The page hierarchy becomes more accessible to screen readers through the use of heading tags which include h1 and h2. The structured page design employs responsive features which let content easily reach users of all devices with different screen dimensions. The website followed semantic HTML guidelines to enhance overall usability thus guaranteeing users can navigate the site with the same ease regardless of their abilities.</p>
+                            
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html">Validation for User Profile page</a></p>
+                        <h3>Link to the page</h3>
+                        <p><a href="userProfile_ST4.html">User Profile Page</a></p>
+
+                </section>
+
+                <section>
+                    <h2 id="sitemap">Site map</h2>
+                        <h3>Technical Description</h3>
+                            <p>The HTML programming constructs a sitemap that features interactive SVG components for sections Home, Volunteer, Table, User Profile, Feedback, Sitemap, and Team. The view displays hierarchy through color-coding sections which connect with lines between them. The mobile-friendly navigation menu toggles visibility with the toggleMenu() function. CSS adds customized fonts alongside specific colors for improved readability besides giving quick links in the footer section.</p> 
+                            <h4>Key HTML Tags</h4>
+                            <p>The primary HTML elements in the code establish the sitemap with an &lt;svg&gt; element and use &lt;circle&gt; to shape the nodes then link them together via &lt;line&gt; to show relationships between sections. The list items in the mobile navigation menu achieve their structure through &lt;ul&gt; and &lt;li&gt; tags which also contain &lt;a&gt; tag links to different sections. The &lt;div&gt; element enables developers to build layout elements for visual design such as the structure used for navigation menus. The elements used to display quick links and contact details in webpages are contained within the &lt;footer&gt; tag. Multiple tags operate as a team to construct both interactive interfaces and visual structures on web pages.</p> 
+                            <h4>Key CSS Properties</h4>
+                            <p>The text color of an element depends on the color property and background-color controls its background appearance. Designers choose system or web fonts through font-family property to define style while margin controls element space outside and padding controls element space inside and border defines element outline. Elements obtain their size through the width and height properties yet the display property rules how they position themselves based on block, inline or flex configurations. Current placement of an element exists between its default position and viewport through the position property while flexbox and grid systems enable responsive design capabilities. The combination of these properties with text-align, box-shadow and opacity along with other features gives designers freedom to build organized and visually pleasing websites.</p>
+                                
+                        <h3>Accessibility</h3>
+                        <p>The practice of accessible web design allows every person including individuals who have disabilities to function within online platforms. Web accessibility requires designers to apply semantic HTML elements starting with header and nav and main because these provide assistance to screen readers benefit from defined structural guides. Users who have visual impairments appreciate the alt text of images through the alt attribute because it explains their function. Web navigation improves through proper heading organization which is achieved by implementing h1 to h6 tags to structure content. Users need high contrast of text colors compared to backgrounds for easy readability. Users need access to keyboard navigation because it permits them to access all content with a mouse-free experience. Websites created by developers who account for these system elements become accessible to all users regardless of their tools or disabilities.</p>
+                            
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                            <p><a href="validation_ST4.html">Validation for Site Map page</a></p><!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+ 
+                        <h3>Link to the page</h3>
+                            <p><a href="Sitemap_ST4.html">Site Map</a></p>
+                            
+                </section>
+
+                <section>
+                    <h2 id="content">Content Page</h2>
+                        <h3>Technical Description</h3>
+                            <p>This code implements a responsive, accessible, and structured web layout using HTML and CSS. The page layout is managed using CSS Grid, with a two-column design, where the header spans both columns and the sidebar, main content, footer, and copyright areas are defined using grid areas. The sidebar navigation is built with an unordered list (ul) containing list items (li) that link to specific sections of the content. The design is visually enhanced with a sticky sidebar that uses flexbox for alignment and positioning, and hover effects are applied to the sidebar items for interactivity. The main content area includes various sections with headings, images, and paragraphs to present detailed information. The use of img tags with descriptive alt attributes ensures accessibility for visually impaired users. The Go to Top button is designed to enable easy navigation back to the top of the page, while the footer section provides contact details, quick links, and social media icons for better user engagement. This approach maintains a clean and accessible design, ensuring a user-friendly experience across devices and screen sizes.</p>
+                            <h4>Key HTML Tags</h4>
+                            <p>The primary HTML tags used in the code structure the webpage's layout and functionality. The header tag defines the introductory section, containing the main heading. The nav element houses the navigation menu, with ul and li tags creating the list items, while the a tags enable hyperlinks to various pages. The aside tag is utilized for the sidebar section, with ul and li tags organizing the links. The main tag encompasses the main content of the page, divided into sections with headings (h1, h2) and paragraphs (p). Images are included with the img tag, providing visual elements. The footer tag is used for the footer section, containing contact information and quick links. The use of semantic tags like header, nav, aside, main, and footer enhances the accessibility and organization of the webpage.</p>  
+                            <h4>Key CSS Properties</h4>
+                            <p>The CSS properties contained in the code determine how webpages get arranged visually. The grid layout system parts include grid-template-columns, grid-template-rows and grid-template-areas to divide the page into header, navigation, sidebar, main content, and footer sections. Through display: grid the page structure responds properly according to different display dimensions. The webpage imports and uses the Google font Quicksand through the @import rule system. Element styles would come from the combination of background, padding and margin while the adjustment of text dimensions uses font-size properties. Color properties together with border and border-radius enhance buttons and links while transition makes the features smoothly interactive. The sticky property applied to the position designates the sidebar to stay stationary during page movements.</p>
+                        <h3>Accessibility</h3>
+                        <p>The code contains various features which improve accessibility. HTML elements that provide semantic meaning such as header, nav, main, and footer enable screen readers to create easy navigation paths for users who have disabilities. Users who depend on screen readers understand images because the alt attribute provides descriptions for images. Supportive technologies identify the links in navigation and sidebar thanks to their organization with ul, li, and a tags. Users can instantly access the page top through the easily accessible "Go to Top" button. Each link along with every button within the interface remains available for keyboard users due to structured programming. Users with visual disabilities alongside other users benefit from proper color contrast that helps both readability and usability on pages.</p>
+                       
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                            <p><a href="validation_ST4.html">Validation for content page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        <h3>Link to the page</h3>
+                            <p><a href="Content_ST4.html">Content page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>The webpage development process presented multiple problems as well as productive insights. The main development barrier involved creating a mobile-responsive layout that worked properly regardless of which device users accessed it through. The flexibility granted by CSS Grid demanded specific attention to mobile view elements so developers had to modify sizing of design components alongside margin measurements and placement styles. Making the webpage accessible to users represented a fundamental design focus. Our goal was proper image alt text use combined with logical tab sequencing while thinking about users with disabilities and we accomplished this through multiple testing cycles.</p>
+                    
+                </section>
+
+                <section>
+                    <h2 id="compliance"> Compliance</h2>
+                    <p>To create websites successfully people must follow all applicable laws and regulations because this action protects both users from legal problems and safeguards their personal information. The use of personal data requires adherence to GDPR alongside CCPA that demands organizations to reveal their data collection methods and storage practices as well as usage protocols. To serve users with disabilities websites must fulfill accessibility requirements based on WCAG standards. All content necessities compliance with Copyright legislation by using either original works or licensing valid rights to images and videos. Websites must show their customers a clear set of terms of service, privacy policy and cookie consent elements as main components to build user trust through transparency.</p>
+                        
+                </section>
+
+                <section>
+                    <h2 id="ref">References</h2>
+                        <ul class="ref">
+                            <h4>resources</h4>
+                                
+                        </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                <ul class="top-level-ul">
+                    <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                    <li>Student 4</li>
+                        <ul> 
+                            <li><a href="splashST01.html">User Profile</a></li>
+                            <li><a href="Volunteerpage01ST01.html">Sitemap</a></li>
+                            <li><a href="contentST01.html">Content page</a></li>
+                        </ul>
+                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#ref">References</a></li>
+                    <p>Available at:<a href="https://www.pexels.com/">https://www.pexels.com/</a>Last Accessed:03rd of March</p>
+                    <p>Available at:<a href="https://pixabay.com/">https://pixabay.com/</a>Last Accessed:03rd of March</p>
+
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+</body>
+</html>
+

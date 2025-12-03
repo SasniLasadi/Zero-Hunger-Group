@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Table Page</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .top{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+                padding: 20px;
+                margin-top: 10px;
+            }
+
+            table{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                border-collapse: collapse;
+                width: 75%;
+                margin-bottom: 20px;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            .row td{
+                text-align: center;
+                height: 90px;
+                
+            }
+
+            .headings{
+                background-color: rgb(75, 247, 89);
+            }
+
+            .headings th{
+                padding: 15px 15px 15px 15px;
+            }
+
+            .row:nth-child(even){
+                background-color: rgb(235, 235, 235);
+            }
+            .tooltip {
+                position: relative;
+                top: -20px;
+                background: rgb(0, 61, 0);
+                padding: 10px ;
+                border-radius: 25px;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s;
+                font-weight: bold;
+                color: white;
+                font-size: 15px;
+            }
+            .tooltip:before{
+                position: absolute;
+                content: "";
+                height: 15px;
+                width: 15px;
+                background: rgb(0, 61, 0);
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+            }
+            .icon:hover .tooltip{
+                opacity: 1;
+                pointer-events: auto;
+            }
+             
+            .icon img{
+                border: 0.5px solid black;
+                border-radius: 30px;
+                width: 60px;
+            }
+        </style>
+	</head>
+	<body>
+        <header>
+            <h3>Together, we can ensure no plate is ever empty</h3>
+        </header>
+
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="imageFile/siteLogo.png" alt="Website Logo" width="250"></a>
+            </div>
+            <div class="toggle" onclick="toggleMenu()">
+                <a href="#"><img src="imageFile/menue.png" alt="Menue"  width="40"></a>
+            </div>
+            <ul class="menue">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="userProfile_ST4.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function toggleMenu(){
+                const menu=document.querySelector('.menue');
+                menu.classList.toggle('active');
+            }
+        </script>
+
+        <main>
+        <div class="top">
+            <div class="intro">
+                <h1 >Global Hunger Index (GHI)</h1>
+                <p>
+                    As a monitoring instrument the Global Hunger Index measures worldwide 
+                    hunger levels through time-based assessments of hunger aspects. The Global 
+                    Hunger Index serves multiple purposes including it functions as a hunger 
+                    awareness tool to measure these levels for nation states and regions and 
+                    reveal locations that require additional action to end hunger.</p>
+                <p>
+                    Below is the GHI index of South and East Asian contries. 
+                    127 countries around the world have participated in this.
+                </p>
+            </div>
+        </div>
+        <table>
+            <caption>2024 Global Hunger Index (GHI) Scores in South and East Asia</caption>
+            <tr>
+                <th colspan="8"><img src="imageFile/siteLogo.png" alt="Website Logo"></th>
+            </tr>
+            <tr class="headings">
+                <th>Region</th>
+                <th>Country</th>
+                <th>Availability <br>of GHI</th>
+                <th>2024 <br>GHI Rank</th>
+                <th>2000</th>
+                <th>2008</th>
+                <th>2016</th>
+                <th>2024</th>
+            </tr>
+
+            <!--South Asia-->
+            <tr class="row" id="southasia">
+                <th rowspan="8">South Asia</th>
+                <td><div class="icon">  
+                    <span class="tooltip">Sri Lanka<br></span>
+                    <a href="https://www.globalhungerindex.org/sri-lanka.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/sri-lanka.png" alt="Sri Lanka" >
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>56</td>
+                <td>21.7</td>
+                <td>17.6</td>
+                <td>15.0</td>
+                <td>11.3</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Nepal<br></span>
+                    <a href="https://www.globalhungerindex.org/nepal.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/nepal.png" alt="Nepal">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>68</td>
+                <td>37.1</td>
+                <td>29.2</td>
+                <td>21.2</td>
+                <td>14.7</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Bangladesh <br></span>
+                    <a href="https://www.globalhungerindex.org/bangladesh.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/bangladesh.png" alt="Bangladesh">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>84</td>
+                <td>33.8</td>
+                <td>30.6</td>
+                <td>24.7</td>
+                <td>19.4</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">India <br></span>
+                    <a href="https://www.globalhungerindex.org/india.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/india.png" alt="India">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>105</td>
+                <td>38.4</td>
+                <td>35.2</td>
+                <td>29.3</td>
+                <td>27.3</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Pakistan <br></span>
+                    <a href="https://www.globalhungerindex.org/pakistan.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/pakistan.png" alt="Pakistan">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>109</td>
+                <td>36.6</td>
+                <td>31.4</td>
+                <td>24.6</td>
+                <td>27.9</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Afghanistan <br></span>
+                    <a href="https://www.globalhungerindex.org/afghanistan.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/afghanistan.png" alt="Afghanistan">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>116</td>
+                <td>49.6</td>
+                <td>35.7</td>
+                <td>27.1</td>
+                <td>30.8</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Bhutan <br></span>
+                    <a href="https://www.globalhungerindex.org/bhutan.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/bhutan.png" alt="Bhutan">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not designated due to lack of data</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Maldives<br></span>
+                    <a href="https://www.globalhungerindex.org/maldives.html" target="_blank" aria-label="Link to globalhungerindex.com">   
+                        <img src="imageFile/maldives.png" alt="Maldives">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not designated due to lack of data</td>
+            </tr>
+
+            <!--East Asia-->
+            <tr class="row" id="eastasia">
+                <th rowspan="7">East Asia</th>
+                <td><div class="icon">
+                    <span class="tooltip">China<br></span>
+                    <a href="https://www.globalhungerindex.org/china.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/010-china.png" alt="China">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>1-22 <sup>1</sup></td>
+                <td>13.4</td>
+                <td>7.2</td>
+                <td>&#60; 5</td>
+                <td>&#60; 5</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Mongolia<br></span>
+                    <a href="https://www.globalhungerindex.org/mongolia.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/mongolia.png" alt="Mongolia">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>26</td>
+                <td>29.7</td>
+                <td>16.7</td>
+                <td>7.5</td>
+                <td>5.6</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">NorthKorea<br></span>
+                    <a href="https://www.globalhungerindex.org/korea-dpr.html" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/north-korea.png" alt="North Korea">
+                    </a></div>
+                </td>
+                <td>&#10004;</td>
+                <td>118</td>
+                <td>43.7</td>
+                <td>30.5</td>
+                <td>26.2</td>
+                <td>31.4</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Japan<br></span>
+                    <a href="https://www.globalhungerindex.org/" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/009-japan.png" alt="Japan">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not designated due to lack of data</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Hong Kong<br></span>
+                    <a href="https://www.globalhungerindex.org/" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/002-hong-kong.png" alt="Hong Kong">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not designated due to lack of data</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">Macao<br></span>
+                    <a href="https://www.globalhungerindex.org/" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/macao.png" alt="Macao">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not designated due to lack of data</td>
+            </tr>
+            <tr class="row">
+                <td><div class="icon">
+                    <span class="tooltip">SouthKorea<br></span>
+                    <a href="https://www.globalhungerindex.org/" target="_blank" aria-label="Link to globalhungerindex.com">
+                        <img src="imageFile/004-south-korea.png" alt="South Korea">
+                    </a></div>
+                </td>
+                <td>&#10008;</td>
+                <td colspan="5">Not calculated due to lack of data</td>
+            </tr>
+
+        </table>
+        </main>
+        
+        <footer class="footer">
+            <div class="contact">
+                <h2>Get in Touch</h2>
+                <span class="topics">Find Us</span>
+                <p>Galle Road, Colombo, Sri Lanka</p>
+
+                <span class="topics">Call Us</span>
+                <p>+94 865 741 963</p>
+
+                <span class="topics">Write Us</span>
+                <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+            </div>
+
+            <div class="links">
+                <h2>Quick Links</h2>
+                <p><a href="home.html">Home</a></p>
+                <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+                <p><a href="table.html">Table</a></p>
+                <p><a href="userProfile_ST4.html">User Profile</a></p>
+                <p><a href="feedback.html">Feedback</a></p>
+                <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+                <p><a href="team.html">Team</a></p>
+            </div>
+
+            <div class="editorPage">
+                <h2>Editors</h2>
+                <p><a href="pageEditorST01.html">Student 1</a></p>
+                <p><a href="pageEditor_ST2.html">Student 2</a></p>
+                <p><a href="pageEditor_ST3.html">Student 3</a></p>
+                <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+            </div>
+
+            <div class="social">
+                <h2>Follow Us</h2>
+                <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+            </div>
+            
+            
+        </footer>
+        <div class="copyright">
+            <p>&copy; copyright 2025. All rights reserved</p>
+        </div>
+	</body>
+</html>

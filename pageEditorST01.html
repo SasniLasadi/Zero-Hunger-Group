@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Vinuji Balasooriya</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+   body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        position: relative; 
+        left: 0;  
+    }
+    #stud{
+        background-color: #6f6f6de6;
+        color: white;
+    }
+    main {
+        flex: 3;
+        min-width: 70%;
+    }
+
+    aside {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin-right: 10px;
+        margin-top: 61px;
+        position: relative;
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+    }
+    section h1{
+        text-align: center;
+    }
+
+    header{
+        text-align:center;
+        background-color: rgb(185, 255, 165);
+        color: black;
+        padding: 15px 0;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center; 
+    }
+
+    img {
+        width: 100%; 
+        max-width: 400px;
+    }
+    .imglogo{
+            width: 35%;
+        }
+
+    .top {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
+
+    .top a {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .top a:hover {
+        background-color: #0056b3;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; 
+        }
+        aside {
+            margin-top: 20px;
+        }
+    }
+
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <h3>Together, we can ensure no plate is ever empty</h3>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="home.html"><img class="imglogo" src="images/siteLogo.png" alt="Website Logo" width="250px"></a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()">
+            <a href="#"><img src="images/menue.png" alt="Menue"  width="40px"></a>
+        </div>
+        <ul class="menue">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Volunteerpage01ST01.html">Volunteer</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="userProfile_ST4.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="Sitemap_ST4.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu(){
+            const menu=document.querySelector('.menue');
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+        <section id="stud">
+            <h1>Vinuji Balasooriya, Student 1</h1>
+        </section>
+    <main>
+        <div class="container">
+            <!-- Main content area -->
+            <main>
+
+                <h4>Splash screen, Volunteer Page, Content Page</h4>
+
+                <section>
+                    <h2 id="splash">Splash screen</h2>
+                        <h3>Technical Description</h3>
+                            <p>This webpage opens with a centered background image which creates an elegant first impression for viewers. The image surface contains a semi-transparent circular masking element which helps users read the text content. The splash screen contains website mission statement with members' names as well as an editorial link button. Through the page editor editors can present comprehensive explanation of the code structure alongside functional details to enable users in understanding website development and maintenance approaches.</p> 
+                            <h4>Key HTML Tags</h4>
+                                <ul>
+                                    <li><strong>&lt;html&gt;</strong>: element functions as the main starting point for every HTML document which comprises all webpage material.</li>
+                                    <li><strong>&lt;head&gt;</strong>: element contains both document metadata and fundamental information about the page title together with attached external style sheets.</li>
+                                    <li><strong>&lt;title&gt;</strong>: element establishes which title will show up on browser tabs for the webpage.</li>
+                                    <li><strong>&lt;link&gt;</strong>: tag works as a connection for external HTML resources which point to the CSS file named `styles.css`.</li>
+                                    <li><strong>&lt;meta&gt;</strong>: The meta element serves to provide essential metadata which includes trigger automatic redirection through specifying a time duration using the http-equiv attribute.</li>
+                                    <li><strong>&lt;style&gt;</strong>: This style section includes CSS rules directly inside the HTML file to style how the page displays itself. </li>
+                                    <li><strong>&lt;body&gt;</strong>: The body element presents all content along with images and text that will be shown on the webpage.</li>
+                                    <li><strong>&lt;div&gt;</strong>: The &lt;div&gt; element establishes a generic container which allows the grouping of webpage items. This element enables the development of multiple sections which include the splash container and overlay component along with the content material.</li>
+                                    <li><strong>&lt;h1&gt;</strong>: A top-level heading appears through this tag for purposes of displaying the main page title.</li>
+                                    <li><strong>&lt;p&gt;</strong>: Defines a paragraph. The mission statement together with group member details appear inside this section.</li>
+                                    <li><strong>&lt;strong&gt;</strong>: The strong element defines emphasized text which usually appears in bold font. The text contains "Group Members" which appears highlighted through this element.</li>
+                                    <li><strong>&lt;a&gt;</strong>: The tag creates a link which directs users to access `#page-editor.html`.</li>
+                                    <li><strong>&lt;button&gt;</strong>: The button element enables clickable functionality for the Page Editor call-to-action button.</li>
+                                    <li><strong>@keyframes</strong>: This animation equipment inside CSS serves as a rule to establish movement definitions. The animation performs a spinning display through this rule definition.</li> 
+                                </ul>
+                            <h4>Key CSS Properties</h4>
+                                <ul>
+                                    <li><strong>height: 100vh</strong> - The height of the body element extends to 100% of viewport height through the property value 100vh.</li>
+                                    <li><strong>display: flex</strong> - The application of flexbox layout enables the body section to arrange its content with enhanced flexibility.</li>
+                                    <li><strong>justify-content: center</strong> - Centers the content horizontally within the flex container.</li>
+                                    <li><strong>align-items: center</strong> - The content in a flex container receives central positioning along its vertical axis.</li>
+                                    <li><strong>position: absolute</strong> - Absolute positioning of elements in the HTML design system functions based on the splash container serving as the nearest positioned relation to the overlay component.</li>
+                                    <li><strong>background: rgba(147, 145, 145, 0.8)</strong> - The application generates a transparent dark gray element with 80% opacity to enhance the legibility of text across the background picture.</li>
+                                    <li><strong>background-image: url(images/splashscreen.jpg)</strong> - The background image of the splash container receives its visual appearance through this command.</li>
+                                    <li><strong>background-size: cover</strong> - The background image receives full coverage of the splash container and maintains its ratio dimensions.</li>
+                                    <li><strong>text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9)</strong> - The text obtains a bold shadow effect which enhances its contrast and visibility on the background.</li>
+                                    <li><strong>cursor: pointer</strong> - The button changes its cursor to a pointer when the mouse pointer hovers above it.</li>
+                                    <li><strong>animation: spin 1s linear infinite</strong> - The loader element receives an endless rotating animation through this statement.</li>
+                                    <li><strong>@keyframes spin</strong> - The animation for the spinning loader performs an infinite rotation of its element for 360 degrees.</li>
+                                </ul>
+                        <h3>Accessibility</h3>
+                            <ul>
+                                <li><strong>Alternative Text for Images</strong>: Before using images users with visual impairments should have screen readers present descriptive text to them.</li>
+                                <li><strong>Headings Structure</strong>: An appropriate heading structure will help users move through content by making navigation easier for screen reader users.</li>
+                                <li><strong>Semantic HTML Elements</strong>: Using elements like <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> ensure that the design include standards that enable assistive technologies to properly decode content then display it through structured accessible methods.</li>
+                            </ul>
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                            <p><a href="validationST01.html#splashVal">Validation for splash screen</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        <h3>Link to Splash screen</h3>
+                            <p><a href="splashST01.html">Splash screen</a></p>
+                </section>
+
+                <section>
+                    <h2 id="volunteer">Volunteer Page</h2>
+                        <h3>Technical Description</h3>
+                            <p>Our webpage utilizes interactive volunteer cards to promote various programs which let users involve themselves in hunger relief efforts through the volunteering section. The website experience features two specific web pages for your convenience. The initial web page introduces relevant imagery and creates an important message followed by a booking link for hunger volunteer programs. Users who click on this button will find themselves on the second page where they can learn about detailed volunteer programs along with their descriptions for engagement purposes. users experience effortless navigation which simplifies their ability to find ways to help decrease hunger and take concrete steps toward this goal.</p> 
+                            <h4>Key HTML Tags</h4>
+                                <ul>
+                                    <li><strong>&lt;html&gt;</strong>: The root element of an HTML document. It contains all the content of the page.</li>
+                                    <li><strong>&lt;head&gt;</strong>: The Document Type Definition section contains metadata details about the document that includes the title and character set information and linked stylesheet and script references. The document metadata section contains information about document titles yet background scripts and character sets in addition to linked stylesheets but refrains from displaying visible webpage content.</li>
+                                    <li><strong>&lt;title&gt;</strong>: The document title defines the word that appears in browser tabs.</li>
+                                    <li><strong>&lt;body&gt;</strong>: The HTML document shows its visible content through this section. The browser shows all textual and visual components as well as displayable elements within this area.</li>
+                                    <li><strong>&lt;header&gt;</strong>:  The element functions as either a document header or a section header. Thispage element contains logos and navigation elements as well as introductory content.</li>
+                                    <li><strong>&lt;nav&gt;</strong>: Site navigation menus appear as navigation links in order to assist users with their movement through the website.</li>
+                                    <li><strong>&lt;ul&gt;</strong>: The unordered list element produces list items with bullet pointed display.</li>
+                                    <li><strong>&lt;script&gt;</strong>: Client-side JavaScript is used as defined to add page interactivity. It can be placed either in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> sections. The script block can reside directly inside either the head or body element of an HTML document..</li>
+                                    <li><strong>&lt;footer&gt;</strong>: The footer section functions as a document component that carries contact details in addition to copyright notes or website relations.</li>
+                                    <li><strong>&lt;a href&gt;</strong>: Provides definition of a hyperlink which includes the <code>href</code> attribute to specify the URL destination.</li>
+                                    <li><strong>&lt;p&gt;</strong>:This tag is used to define a paragraph of text.</li>
+                                    <li><strong>&lt;form&gt;</strong>: The code establishes an HTML form with features to obtain information from users. The form can use multiple form components including input fields and buttons and various other form elements.</li>
+                                    <li><strong>&lt;button type&gt;</strong>: This tag is usedd to design a clickable button. The <code>type</code> attribute from this element determines the functional response of this button (you may use it for form submission or standard buttons).</li>
+                                </ul>
+                            <h4>Key CSS Properties</h4>
+                                <ul>
+                                    <li><strong>background-color</strong>: Used to add background colors of elements like body background and banner background.</li>
+                                    <li><strong>display (Flexbox)</strong>: This style provides a flexible arrangement system which can apply to elements including the card container and feature items and rows and columns.</li>
+                                    <li><strong>border-radius</strong>: This is used to apply smooth rounded edges to different components such as cards, buttons, tables and containers.</li>
+                                    <li><strong>box-shadow</strong>: Elements receive shadow effects through CSS for creating subtle 3D appearance which appears in cards, buttons and review cards.</li>
+                                    <li><strong>padding</strong>: This feature manages internal spacing which can be used across cards, buttons, text areas and containers.</li>
+                                    <li><strong>margin</strong>: Sets defines element spacing to create gaps that separate cards, buttons and additional components.</li>
+                                    <li><strong>hover effects</strong>:The combination of transform with box-shadow and background-color and other functionalities enables the creation of interactive hover feedback elements (such as cards and buttons).</li>
+                                    <li><strong>width & height</strong>: The size dimensions of elements including images as well as cards and containers become determinable with different measures through this feature.</li>
+                                    <li><strong>font-size</strong>: The program enables users to modify text dimensions for clear reading alongside visual design consistency.</li>
+                                    <li><strong>color</strong>: The color scheme controls all textual elements including headings together with text content and buttons.</li>
+                                    <li><strong>text-align</strong>: This element sets text distribution within containers that affects headings and section labels.</li>
+                                    <li><strong>max-width</strong>: Elements within containers and tables benefit from this rule to regulate their layout through maximum width limitations.</li>
+                                    <li><strong>overflow</strong>: This CSS property controls content overflow behavior for elements where <code>overflow-y: auto</code> creates scrollable content.</li>
+                                    <li><strong>position</strong>: It specifies the placement of components for employing banners or dropdowns while controlling the page layout.</li>
+                                    <li><strong>@media (Media Queries)</strong>: Programmers need Sketch for designing adaptable interfaces with elements that resize for various display dimensions.</li>
+                                    <li><strong>text-transform</strong>: The tool gives users control over their text case for creating text that requires uppercase sections.</li>
+                                    <li><strong>transition</strong>: This property enables smooth transitions of background color and transform and box-shadow properties when used in hover effects.</li>
+                                </ul>
+                        <h3>Accessibility</h3>
+                            <ul>
+                                <li><strong>Ensure Sufficient Color Contrast</strong>:  The combination of dark text with a bright background ensures easy text readability.</li>
+                                <li><strong>Form Accessibility </strong>: All form inputs should include labels using the (&lt;label&gt;) tags along with specific guidance for users to follow.</li>
+                                <li><strong>Ordered Lists </strong>: screen reader navigation enhances through tagging lists using proper semantic elements like ordered list &lt;ol&gt;and unordered list &lt;ul&gt;.</li>
+                            </ul>
+
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                            <p><a href="validationST01.html#volunteerVal">Validation for volunteer page</a></p><!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+ 
+                        <h3>Link to the page</h3>
+                            <p><a href="Volunteerpage01ST01.html">Volunteer Page 01</a></p>
+                            <p><a href="Volunteerpage02ST01.html">Volunteer Page 02</a></p>
+                </section>
+
+                <section>
+                    <h2 id="content">Content Page</h2>
+                        <h3>Technical Description</h3>
+                            <p>A well-structured layout appears in the content page which utilizes HTML and CSS for its creation. You will find the page segmented through HTML elements which include &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;div&gt;, and &lt;footer&gt; for logical section organization. A responsive design that looks attractive emerges from using the CSS properties display: grid; and grid-template-areas;. The user experience benefits from styling features which include background-color; and transition: all 0.5s to improve functionality together with readability. A structured presentation design creates neat logical interfaces which make content delivery more effective.</p>
+                            <h4>Key HTML Tags</h4>
+                                <ul>
+                                    <li><strong>&lt;div&gt;</strong>The component functions as a structure to arrange and design content.</li>
+                                    <li><strong>&lt;nav&gt;</strong>This is used to define the navigation menue.</li>
+                                    <li><strong>&lt;header&gt;</strong>This is used to represent the top section of the page.</li>
+                                    <li><strong>&lt;main&gt;</strong>This is used to hold the main content of the web page.</li>
+                                    <li><strong>&lt;footer&gt;</strong>Used to add relevant information to the bottom section of the webpage.</li>
+                                </ul>
+                            <h4>Key CSS Properties</h4>
+                                <ul>
+                                    <li><strong>display: grid;</strong>The system implements format organization by utilizing a grid structure.</li>
+                                    <li><strong>grid-template-areas;</strong> It designs stationary grid sections with specific names.</li>
+                                    <li><strong>position: sticky;</strong>An element remains visible when the viewer scrolls through a page.</li>
+                                    <li><strong>background-color;</strong>Used to set relevant background-color for the elements.</li>
+                                    <li><strong>transition: all 0.5s;</strong>Used to make animation effect more smooth</li>
+                                </ul>    
+
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li><strong>Descriptive links</strong>: Instead of using general click here or learn more buttons, descriptive links were added</li>
+                            <li><strong>Use Proper Headings (&lt;h1&gt;, &lt&gt;h2>, etc.) </strong>: Using elements like <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> to ensure that assistive technologies can interpret and present content in a structured and accessible manner.</li>
+                            <li><strong>Alternative text for images</strong>: Every image requires a descriptive alt attribute for screen readers to explain it to visually impaired users. Visual impairments users benefit from screen readers who utilize alt attributes to explain images to them.</li>
+                        </ul>
+
+                        <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                            <p><a href="validationST01.html#contentVal">Validation for content page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                            
+                        <h3>Link to the page</h3>
+                            <p><a href="contentST01.html">Content page</a></p>
+                </section>
+
+                <section>
+                    <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <ol>
+                        <li><strong>Responsiveness Issues:</strong> The page needed additional media queries in its CSS to develop full device responsiveness.Media queries were essential to guarantee desirable user experiences across the different device platforms.</li>
+                        <li><strong>Interactive Elements:</strong> The addition of hover effects together with clickable buttons to volunteer cards made the interface more complex. The web application faced difficulties when making sure interactive features operated perfectly between different web browsers during examination.</li>
+                        <li><strong>Testing and Debugging:</strong> Testing and debugging the entire feature set demanded most of our time as we checked both JavaScript execution and the prevention of layout shifts and broken links throughout the development process.</li>
+                        <li><strong>Focus on Simplicity:</strong> You should arrange the layout into an organized and simple design that helps users navigate towards volunteering information easily.</li>
+                        <li><strong>Responsive Design:</strong> Make the page attractive along with proper functionality across all devices especially smartphones to enable seamless user experience at any screen resolution.</li>
+                        <li><strong>Clear Call to Action:</strong>One must place the "Volunteer to End Hunger" button at the forefront to encourage direct and instant user participation.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2 id="compliance"> Compliance</h2>
+                        <p>The web pages Splash Screen, Volunteer Page, Page Editor and Content Page are built in line with Janet regulations to guarantee security and accessibility and manage content properly. Semantic HTML elements including &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; improve content accessibility since assistive technologies find it simpler to understand the HTML structure. Images gain accessibility for users with visual impairments through alt attributes as well as appropriate font sizes together with proper color contrasts which enhance content readability. A user-friendly interface connects different webpages which allows users to retrieve relevant content without losing their interest.</p> 
+                        <p>The websites achieve user friendliness through compliance with Janet regulations delivering accessibility along with security and ethical compliance standards. Users can efficiently access the website through standard web practices which produce security and compliance benefits for their data privacy alongside ethical professional content delivery.</p>
+                        
+                </section>
+
+                <section>
+                    <h2 id="ref">References</h2>
+                        <ul class="ref">
+                            <h4>resources</h4>
+                                <ul>
+                                    <li>W3Schools. (n.d.). HTML Tutorial. W3Schools. Available at: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> (Last accessed: 4 March 2025).</li>
+                                    <li>W3Schools. (n.d.). CSS Tutorial. W3Schools. Available at: <a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a> (Last accessed: 4 March 2025).</li>
+                                    <li>W3Schools. (n.d.). JavaScript Tutorial. W3Schools. Available at: <a href="https://www.w3schools.com/js/default.asp">https://www.w3schools.com/js/default.asp</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Traversy Media.HTML Crash Course for Beginners. YouTube. Available at: <a href="https://www.youtube.com/watch?v=3-2Pj5hxwrw">https://www.youtube.com/watch?v=3-2Pj5hxwrw</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Traversy Media. (2018, March 9). CSS Crash Course for Beginners. YouTube. Available at: <a href="https://www.youtube.com/watch?v=FazgJVnrVuI">https://www.youtube.com/watch?v=FazgJVnrVuI</a> (Last accessed: 4 March 2025).</li>
+                                    <h4>Content page references</h4>
+                                    <li>FAO. (2017, November). Sri Lanka’s food production hit by extreme drought followed by floods. Available at: <a href="https://www.fao.org/newsroom/detail/Sri-Lanka-s-food-production-hit-by-extreme-drought-followed-by-floods/en">https://www.fao.org/newsroom/detail/Sri-Lanka-s-food-production-hit-by-extreme-drought-followed-by-floods/en</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Nature. (2021, December). The impact of climate change on food security in Sri Lanka. Available at: <a href="https://www.nature.com/articles/s41599-021-00917-4>https://www.nature.com/articles/s41599-021-00917-4">https://www.nature.com/articles/s41599-021-00917-4>https://www.nature.com/articles/s41599-021-00917-4</a>(Last accessed: 4 March 2025).</li>
+                                    <li>WFP. (2025, February). Food insecurity improves in Sri Lanka, but prevails within specific regions. Available at: <a href="https://www.wfp.org/news/food-insecurity-improves-sri-lanka-prevails-within-specific-regions">https://www.wfp.org/news/food-insecurity-improves-sri-lanka-prevails-within-specific-regions</a> (Last accessed: 4 March 2025).</li>
+                                    <li>WFP. (n.d.). Sri Lanka Country Brief. Available at: <a href="https://www.wfp.org/countries/sri-lanka">https://www.wfp.org/countries/sri-lanka</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Rise Up School Meals. (n.d.). School meal programs in Sri Lanka. Available at: <a href="https://riseupschoolmeals.com/">https://riseupschoolmeals.com/</a>" (Last accessed: 4 March 2025).</li>
+                                    <li>ResearchGate. (2015). Climate, climate risk and food security in Sri Lanka:Need for strengthening adaptation strategies. Available at: <a href="https://www.researchgate.net/publication/273448637_Climate_Climate_Risk_and_Food_Security_in_Sri_Lanka_Need_for_Strengthening_Adaptation_Strategies">https://www.researchgate.net/publication/273448637_Climate_Climate_Risk_and_Food<br>_Security_in_Sri_Lanka_Need_for_Strengthening_Adaptation_Strategies</a>(Last accessed: 4 March 2025).</li>
+                                    <li>School Meals Coalition. (n.d.). Sri Lanka – School Meals Coalition Member. Available at: <a href="https://schoolmealscoalition.org/member/sri-lanka">https://schoolmealscoalition.org/member/sri-lanka</a> (Last accessed: 4 March 2025).</li>
+                                    <li>ReliefWeb. (2024, February). Sri Lanka: Rapid food security assessment – Flood impact in Ampara district. Available at: <a href="https://reliefweb.int/report/sri-lanka/sri-lanka-rapid-food-security-assessment-flood-impact-ampara-district-february-2024">https://reliefweb.int/report/sri-lanka/sri-lanka-rapid-food-security-assessment-flood-impact-ampara-district-february-2024</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            <h4>Volunteer Banner Animation Images</h4>
+                                <ul>
+                                    <li>Image 1: Available at: <a href="https://www.alburolaw.com/wp-content/uploads/2023/02/Article-poster-2023-02-17T083248.057.png">https://www.alburolaw.com/wp-content/uploads/2023/02/Article-poster-2023-02-17T083248.057.png</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 2: Available at: <a href="https://dharalive.com/wp-content/uploads/2024/07/vecteezy_ai-generated-poor-kids-standing-in-line-holding-empty-pots_36708019-scaled-e1720187754451.jpg">https://dharalive.com/wp-content/uploads/2024/07/vecteezy_ai-generated-poor-kids-standing-in-line-holding-empty-pots_36708019-scaled-e1720187754451.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 3: Available at: <a href="https://core.adozioneadistanza.actionaid.it/wp-content/uploads/2018/05/bambini-fame.jpeg">https://core.adozioneadistanza.actionaid.it/wp-content/uploads/2018/05/bambini-fame.jpeg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 4: Available at: <a href="https://convoyofhope.org/wp-content/uploads/2024/02/web-V3-12-11-23-Madagascar-MC-IMG_6982-1536x1024.jpg">https://convoyofhope.org/wp-content/uploads/2024/02/web-V3-12-11-23-Madagascar-MC-IMG_6982-1536x1024.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 5: Available at: <a href="https://static.wixstatic.com/media/14356a_58fae229acdc43d4ac645250b05485c1~mv2.webp/v1/fill/w_429,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/14356a_58fae229acdc43d4ac645250b05485c1~mv2.webp">https://static.wixstatic.com/media/14356a_58fae229acdc43d4ac645250b05485c1~mv2.webp/<br>v1/fill/w_429,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/<br>14356a_58fae229acdc43d4ac645250b05485c1~mv2.webp</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            <h4>Volunteer Card Images</h4>
+                                <ul>
+                                    <li>Image 1: Available at: <a href="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1732135425/rutgerspreporg/ifc2bgafs4hlzplzs9qf/rise-against-hunger-thumbnail_1.jpg">https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1732135425/rutgerspreporg/<br>ifc2bgafs4hlzplzs9qf/rise-against-hunger-thumbnail_1.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 2: Available at: <a href="https://img.trailer-bodybuilders.com/files/base/ebm/trailerbodybuilders/image/2022/11/16x9/Volunteers_Baldwin_Community_School_Mobile_Pantry.636820747970e.png?auto=format,compress&fit=crop&q=45&h=528&height=528&w=950&width=950">https://img.trailer-bodybuilders.com/files/base/ebm/trailerbodybuilders/image/2022/11/16x9/Volunteers<br>_Baldwin_Community_School_Mobile_Pantry.636820747970e.<br>png?auto=format,compress&fit=crop&q=45&h=528&height=528&w=950&width=950</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 3: Available at: <a href="https://wtop.com/wp-content/uploads/2019/03/46690102004_71772585ff_z-480x320.jpg">https://wtop.com/wp-content/uploads/2019/03/46690102004_71772585ff_z-480x320.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 4: Available at: <a href="https://cbs4indy.com/wp-content/uploads/sites/22/2019/12/gleaners.jpeg?w=960&h=540&crop=1">https://cbs4indy.com/wp-content/uploads/sites/22/2019/12/gleaners.jpeg?w=960&h=540&crop=1</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 5: Available at: <a href="https://media.licdn.com/dms/image/v2/D4E10AQHtTLVrRHjt2g/image-shrink_800/image-shrink_800/0/1708783332355?e=2147483647&v=beta&t=H919KpUmZbrATOpQETNNjS7Q-3HGqpe9zz8tuQ1V7Cc">https://media.licdn.com/dms/image/v2/D4E10AQHtTLVrRHjt2g/image-shrink_800/image-shrink_800/0/1708783332355?e=2147483647&v=beta&t=H919KpUmZbrATOpQETNNjS7Q-3HGqpe9zz8tuQ1V7Cc</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 6: Available at: <a href="https://firstcoast.blessingsinabackpack.org/wp-content/uploads/sites/7/2021/04/A1DA6DC3-62F1-4CF2-9F1F-DFBDE2F7D758-1392x1114-1.jpeg">https://firstcoast.blessingsinabackpack.org/wp-content/uploads/sites/7/2021/04/A1DA6DC3-62F1-4CF2-9F1F-DFBDE2F7D758-1392x1114-1.jpeg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 7: Available at: <a href="https://e1.nmcdn.io/foodlife/wp-content/uploads/imported-files/ShopTheDockVolunteersMarch2023.jpg/v:1-width:650-height:425-fit:cover/ShopTheDockVolunteersMarch2023.webp?signature=ebcb9bb6">https://e1.nmcdn.io/foodlife/wp-content/uploads/imported-files/ShopTheDockVolunteersMarch2023.jpg/v:1-width:650-height:425-fit:cover/ShopTheDockVolunteersMarch2023.webp?signature=ebcb9bb6</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            <h4>Volunteer Card Icons</h4>
+                                <ul>
+                                    <li>Clock Icon: Available at: <a href="https://pngtree.com/freepng/clock-icon-vector-png_8412434.html">https://pngtree.com/freepng/clock-icon-vector-png_8412434.html</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Community Icon: Available at: <a href="https://www.flaticon.com/free-icon/community_3090423">https://www.flaticon.com/free-icon/community_3090423</a> (Last accessed: 4 March 2025).</li>
+                                    <li>App Icon: Available at: <a href="https://play-lh.googleusercontent.com/GLeR_zjWwn84enjJK8ppILMcH8aawUz6ZU0Nj9bSn1DgWQZUmnbTks59C_tWNPOuSxo=w240-h480-rw">https://play-lh.googleusercontent.com/GLeR_zjWwn84enjJK8ppI<br>LMcH8aawUz6ZU0Nj9bSn1DgWQZUmnbTks59C_tWNPOuSxo=w240-h480-rw</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Food Icon: Available at: <a href="https://www.flaticon.com/free-icon/food_5235253">https://www.flaticon.com/free-icon/food_5235253</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Lunch Box Icon: Available at: <a href="https://www.flaticon.com/free-icon/lunch-box_5417227">https://www.flaticon.com/free-icon/lunch-box_5417227</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Burger Icon: Available at: <a href="https://depositphotos.com/cn/vector/burger-french-fries-soda-cartoon-vector-icon-illustration-food-drink-665991232.html">https://depositphotos.com/cn/vector/burger-french-fries-soda-cartoon-vector-icon-illustration-food-drink-665991232.html</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Fruit Icon: Available at: <a href="https://www.flaticon.com/free-icon/fruit_10683875">https://www.flaticon.com/free-icon/fruit_10683875</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Vegetable Icon: Available at: <a href="https://www.flaticon.com/de/kostenloses-icon/gemuse_9862079">https://www.flaticon.com/de/kostenloses-icon/gemuse_9862079</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Cute Food Drawing: Available at: <a href="https://www.pinterest.com/pin/cute-food-drawings--1064186586930008866/">https://www.pinterest.com/pin/cute-food-drawings--1064186586930008866/</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            <h4>Content Page Images</h4>
+                                <ul>
+                                    <li>Image 1: Available at: <a href="https://www.tearfund.org.nz/Portals/0/Images/Blogs/Heartbreaking-questions-in-Sri-Lanka.png?ver=cAXndiOvNV95TgxCbmje0g%3d%3d">https://www.tearfund.org.nz/Portals/0/Images/Blogs/Heartbreaking-questions-in-Sri-Lanka.png?ver=cAXndiOvNV95TgxCbmje0g%3d%3d</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 2: Available at: <a href="https://www.repstatic.it/content/contenthub/img/2024/10/03/120055767-203ed433-1857-4962-a478-737b2a68b4e9.jpg?webp">https://www.repstatic.it/content/contenthub/img/2024/10/03/120055767-203ed433-1857-4962-a478-737b2a68b4e9.jpg?webp</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 3: Available at: <a href="https://dailyexpress.lk/wp-content/uploads/2022/05/school-meals-sri-lanka.jpg">https://dailyexpress.lk/wp-content/uploads/2022/05/school-meals-sri-lanka.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 4: Available at: <a href="https://eastasiaforum.org/wp-content/uploads/2022/04/2022-04-06T060215Z_2074702819_RC2AGT9PFKNL_RTRMADP_3_SRI-LANKA-CRISIS-RAJAPAKSA-scaled-1024x682-c-default.webp">https://eastasiaforum.org/wp-content/uploads/2022/04/2022-04-06T060215Z_2074702819_RC2AGT9PFKNL_RTRMADP_3_SRI-LANKA-CRISIS-RAJAPAKSA-scaled-1024x682-c-default.webp</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 5: Available at: <a href="https://www.aljazeera.com/wp-content/uploads/2022/10/AP22278339952853.jpg?resize=770%2C513&quality=80">https://www.aljazeera.com/wp-content/uploads/2022/10/AP22278339952853.jpg?resize=770%2C513&quality=80</a> (Last accessed: 4 March 2025).</li>
+                                    <li>Image 6: Available at: <a href="https://www.mdpi.com/ijgi/ijgi-10-00084/article_deploy/html/images/ijgi-10-00084-g009-550.jpg">https://www.mdpi.com/ijgi/ijgi-10-00084/article_deploy/html/images/ijgi-10-00084-g009-550.jpg</a> (Last accessed: 4 March 2025).</li>
+                                    <li>School Meals Coalition: Available at: <a href="https://schoolmealscoalition.org/member/sri-lanka">https://schoolmealscoalition.org/member/sri-lanka</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            <h4>Splash Screen Image</h4>
+                                <ul>
+                                    <li>Splash Screen: Available at: <a href="https://learnwithshivanshi.com/wp-content/uploads/2024/10/111-1024x576.png">https://learnwithshivanshi.com/wp-content/uploads/2024/10/111-1024x576.png</a> (Last accessed: 4 March 2025).</li>
+                                </ul>
+                            </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                <ul class="top-level-ul">
+                    <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                    <li>Student 1</li>
+                        <ul> 
+                            <li><a href="splashST01.html">Splash screen</a></li>
+                            <li><a href="Volunteerpage01ST01.html">Volunteer page</a></li>
+                            <li><a href="contentST01.html">Content page</a></li>
+                        </ul>
+                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <h2>Get in Touch</h2>
+            <span class="topics">Find Us</span>
+            <p>Galle Road, Colombo, Sri Lanka</p>
+
+            <span class="topics">Call Us</span>
+            <p>+94 865 741 963</p>
+
+            <span class="topics">Write Us</span>
+            <p><a href="foodforhope004@gmail.com">foodforhope004@gmail.com</a></p>
+        </div>
+
+        <div class="links">
+            <h2>Quick Links</h2>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="Volunteerpage01ST01.html">Volunteer</a></p>
+            <p><a href="table.html">Table</a></p>
+            <p><a href="userProfile_ST4.html">User Profile</a></p>
+            <p><a href="feedback.html">Feedback</a></p>
+            <p><a href="Sitemap_ST4.html">Sitemap</a></p>
+            <p><a href="team.html">Team</a></p>
+        </div>
+
+        <div class="editorPage">
+            <h2>Editors</h2>
+            <p><a href="pageEditorST01.html">Student 1</a></p>
+            <p><a href="pageEditor_ST2.html">Student 2</a></p>
+            <p><a href="pageEditor_ST3.html">Student 3</a></p>
+            <p><a href="pageEditor_ST4.html">Student 4</a></p>
+
+        </div>
+
+        <div class="social">
+            <h2>Follow Us</h2>
+            <a href="https://www.whatsapp.com/"><img src="imageFile/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.youtube.com/"><img src="imageFile/youtube.png" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/"><img src="imageFile/linkedin.png" alt="Linkedin"></a>
+            <a href="https://www.facebook.com/"><img src="imageFile/facebook.png" alt="Facebook"></a>
+        </div>
+        
+        
+    </footer>
+    <div class="copyright">
+        <p>&copy; copyright 2025. All rights reserved</p>
+    </div>
+</body>
+</html>
+

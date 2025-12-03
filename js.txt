@@ -1,0 +1,14 @@
+1. To create button click functions.
+2. To validate form data entered by the user checking custom conditions.
+3. To create navigation menue according to the screen size.
+4. To give a loading time for page loading.
+5. To apply reviews and raiting section.
+
+
+
+to manipulate HTML elements, CSS properties
+DB access
+
+
+label,div --> innerHTML(for structural elements)
+events-->onclick
