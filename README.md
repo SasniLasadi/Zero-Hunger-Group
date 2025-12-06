@@ -1,59 +1,60 @@
-# Zero Hunger Awareness Website
+🌍 Zero Hunger Awareness Website
 
-A collaborative web project designed to promote awareness of the United Nations Sustainable Development Goals (SDG) 2: Zero Hunger. The platform focuses on educating users about global hunger issues and encourages collective action to ensure every plate is never empty. The website provides an interactive and user-friendly experience including a homepage, user profile creation, splash screen, sitemap and a feedback page to support user engagement and learning.
+A collaborative web project aimed at promoting awareness of United Nations Sustainable Development Goal (SDG) 2: Zero Hunger. The website educates users about global hunger, highlights key challenges, and encourages meaningful action. It features an accessible and user-friendly interface to support learning, interaction, and smooth navigation.
 
 📌 Project Overview
 
-The site includes the following pages:
+This website includes the following pages:
 
 **Home Page -** Introduces the SDG theme and provides easy navigation throughout the site.
 
-**Splash Screen -** A simple, visually appealing splash screen displayed when loading the site.
+**Splash Screen -** A visually appealing loading screen displayed when entering the website.
 
-**User Profile Page -** Allows users to create and view their profiles with essential information.
+**User Profile Page -** Allows users to create and view their personal profile with essential information.
 
-**Feedback Page -** Collects user opinions to improve the platform’s usability and content.
+**Feedback Page -** Collects user feedback to enhance the platform’s content and usability.
 
-**Sitemap -** Displays the website structure for clear and accessible navigation.
+**Sitemap -** Provides a structured overview of all website pages for easy access and navigation.
 
-**Content Pages –** Provide detailed information about SDG 2: Zero Hunger in an engaging format.
+**Content Pages -** Offer detailed information on SDG 2: Zero Hunger through structured content, visuals, and interactive elements.
 
-**Page Editor –** Displays each contributor’s work, documenting the specific tasks completed by every team member.
+**Page Editor -** Documents each contributor’s work by listing the tasks completed by every team member.
 
-**Content Pages –** Provide detailed information on SDG 2: Zero Hunger through well-structured sections, visuals, and interactive elements.
+**Validation Page -** Ensures contributors follow proper semantic HTML, CSS standards, and accessibility guidelines.
 
 🛠️ Technologies Used
 
 HTML5
+
 CSS3
+
 JavaScript
 
 🚀 Project Goal
 
-To raise awareness of global sustainability issues and encourage users to learn more about the SDGs through an accessible, well-structured web interface.
+To raise awareness about global sustainability challenges and promote learning about SDG 2 through an accessible and well-designed educational website.
 
 📁 My Contributions
 
-While this was a group project, I mainly designed and developed the pages mentioned above.
+While this was a group collaboration, I primarily designed and developed the following pages:
 
-User Profile page 
+User Profile Page
 
-Sitemap 
+Sitemap
 
-Content_ST4 page
+Content_ST4 Page
 
 Page Editor & Validation Page for Student 4
 
 🤝 Team Contributions
 
-This project was developed collaboratively as part of an academic module.
+This project was developed collaboratively as part of an academic assignment.
 
-**Student 1 :** Splash Screen, ,Volunteer page and Content_ST1 page
+**Student 1 -** Splash Screen, Volunteer Page, Content_ST1 Page
 
-**Student 2 :** Home Page, Table Page, Content_ST2 page
+**Student 2 -** Home Page, Table Page, Content_ST2 Page
 
-**Student 3 :** Feedback page, Team page, Content_ST3 page
+**Student 3 -** Feedback Page, Team Page, Content_ST3 Page
 
-**Student 4 :** User Profile page, Sitemap, Content_ST4 page
-
+**Student 4 -** User Profile Page, Sitemap, Content_ST4 Page
 
