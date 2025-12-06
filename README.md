@@ -13,7 +13,7 @@ This website includes the following pages:
 - **Sitemap -** Provides a structured overview of all website pages for easy access and navigation.
 - **Content Pages -** Offer detailed information on SDG 2: Zero Hunger through structured content, visuals, and interactive elements.
 - **Page Editor -** Documents each contributor’s work by listing the tasks completed by every team member.
-- **Validation Page -** Ensures contributors follow proper semantic HTML, CSS standards, and accessibility guidelines.
+- **Validation Pages -** Ensures contributors follow proper semantic HTML, CSS standards, and accessibility guidelines.
 
 ## 🛠️ Technologies Used
 
