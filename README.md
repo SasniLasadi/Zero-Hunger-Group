@@ -1,8 +1,8 @@
-🌍 Zero Hunger Awareness Website
+# 🌍 Zero Hunger Awareness Website
 
 A collaborative web project aimed at promoting awareness of United Nations Sustainable Development Goal (SDG) 2: Zero Hunger. The website educates users about global hunger, highlights key challenges, and encourages meaningful action. It features an accessible and user-friendly interface to support learning, interaction, and smooth navigation.
 
-📌 Project Overview
+## 📌 Project Overview
 
 This website includes the following pages:
 
