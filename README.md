@@ -11,7 +11,7 @@ This website includes the following pages:
 - **User Profile Page -** Allows users to create and view their personal profile with essential information.
 - **Volunteer Page -** Allows individuals register and participate in activities supporting conservation.
 - **Table Page -** Displays each country’s GHI rank and historical scores for 2000, 2008, 2016, and 2024.
-- **Team Page -** showcases the people behind the project and their roles.
+- **Team Page -** Showcases the people behind the project and their roles.
 - **Feedback Page -** Collects user feedback to enhance the platform’s content and usability.
 - **Sitemap -** Provides a structured overview of all website pages for easy access and navigation.
 - **Content Pages -** Offer detailed information on SDG 2: Zero Hunger through structured content, visuals, and interactive elements.
